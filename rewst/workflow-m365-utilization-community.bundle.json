@@ -1,0 +1,2173 @@
+{
+  "version": 2,
+  "exportedAt": "2026-05-20T14:49:11.513410+00:00",
+  "objects": {
+    "workflow_task_id:NrZ5trimjCAB7nSwHAQ8veJ1wjiqgzdCD2hL25SH1U7": {
+      "type": "workflow_task_id",
+      "content_hash": "5pk7XX2mxsR1aUnqTJYpqyEEypxxpEY8NyeEpoCdeU5d",
+      "hash": "CbPXf4YQbv7pCRi3pgetbYB16U747JHi7Jf9RtU3TS9L",
+      "fields": {
+        "id": "98784a41d7714212aa0b9ff174467fbf"
+      }
+    },
+    "transition_id:4MmWY7GW2R6TB1Bi3Ytt5yatcaN5LRJ8YpNVcJkCJJq5": {
+      "type": "transition_id",
+      "content_hash": "BUxLJ3xjoxGA5QAttZManK4cj6WASusf8thj6u7sEzir",
+      "hash": "3Suv2gw6dc6sLr8Zu1dGFkPvzazSSLgpYd8z8rvBkQC5",
+      "fields": {
+        "id": "0c886cc5-bf6c-4ae4-8db4-d73e7f553820"
+      }
+    },
+    "transition_id:Hwbb1gy6RDsSxBucvykmwEbd44gH6Qwt8kELfhuzGcPP": {
+      "type": "transition_id",
+      "content_hash": "FBDgKjoUeRa5rdf9fW9GpLAmS8s5wxZEsEGdCVWT5hYw",
+      "hash": "ESmGUq1DPqrpxR3hoLo3tfq5MdMHns5PQ1zPgMDYRWSq",
+      "fields": {
+        "id": "a4315ca8-d637-4e2d-bc54-a1440dc060cf"
+      }
+    },
+    "workflow_task_id:DfRAuUcHkTcpmhaQdCKH4FrFYd6LBBpdFwmENuPnmBU6": {
+      "type": "workflow_task_id",
+      "content_hash": "9GUXQphxGfAUd1PSrhEjN5k3uc35PVojdLLrwoM5jurL",
+      "hash": "Cy13oktvQxd943ZzU1bTAk3y7HXJUQ4yiAKra9bkF15e",
+      "fields": {
+        "id": "6562d2d6858a4ecc8ba85342f90192c6"
+      }
+    },
+    "action:4pX4tW7kDzGhjgpyZZM5mUxdAV9B7Z7FNaszTgeum9Ka": {
+      "type": "action",
+      "content_hash": "CQ7ohpNTTHcoK2TS4yHmDMtaPqNf3voUoEK7TKQhw6u6",
+      "hash": "3GhS4w3yJSrigHB73Tp6Lf936yTHNGSumuAExADy47UV",
+      "fields": {
+        "ref": "rewst.update_template"
+      }
+    },
+    "workflow_task_id:GMKL87i8WA8dK2L4bmSvPsN194pp4iRJEFTxZ6FwKv3K": {
+      "type": "workflow_task_id",
+      "content_hash": "8FQixQwUSXAmc4JGDwUGWiRbMszu8R1vm7uWp8iJsjwG",
+      "hash": "7Kz6EthTDHWdAAfhvsyXV6mb3ganGvkGkE6YxeRYUJ5o",
+      "fields": {
+        "id": "c3fb368bac694826b3e12e9cadaca8eb"
+      }
+    },
+    "transition_id:41XwusqpeABTFLXV2AvXdoLA6YS64jq7d9eVgdTfcM3k": {
+      "type": "transition_id",
+      "content_hash": "3ZfKP9qHPP3pqWXbNgwGFdyMn7r9byaqxT4srwPM6ZCh",
+      "hash": "7iDDxPqpnJva9qRa2Ct2GbdkC4DhMcoWqX1CYANdPWfW",
+      "fields": {
+        "id": "c2f72d74-0f1e-4558-bb27-78de6e734d28"
+      }
+    },
+    "trigger_type:ADTkFDGY58o8ACCDoptsybAUcb2tAD1nBghXPMVRZ1Xe": {
+      "type": "trigger_type",
+      "content_hash": "HnoxQiJaD2AXzSixvrruvJbH2LA13kjSwUttGFc847xJ",
+      "hash": "H1qSSRhW6ijrPV43CkQWG4zRzZdDE7uYhvSpDQWH9JvZ",
+      "fields": {
+        "ref": "core.Webhook"
+      }
+    },
+    "action:GnUSfrR3daxQGJrn3HCammBLTAYSzwGqXZVPjh9s32kL": {
+      "type": "action",
+      "content_hash": "FMu3hsNV7SdbaFHCpQXe4YsxtfRZHq3LfQ8Ej6uv322w",
+      "hash": "CDXNu8XJkn4bBRzcx18z5UYnjXiUM2WB6hTMAwGhMQ4K",
+      "fields": {
+        "ref": "core.http_request"
+      }
+    },
+    "workflow_task_id:5P5L7j8fnS2UNib8DfeRV5oCYoAgU4RcB2cadyLWRmpm": {
+      "type": "workflow_task_id",
+      "content_hash": "BS625JWxXctncsgTLfNxQHpLQ1WYgJjGTVnYUu9LkZ92",
+      "hash": "9iUpbuzvzfUbgKAf6bxKbc3JCBGXai46R7B1KxpYUru2",
+      "fields": {
+        "id": "f82d1c5e9a474357a8136cea20469fac"
+      }
+    },
+    "transition_id:9bUoaGqCRnAiqxiyvoPWjbG2wtjEkn5uQKyhhqARD1if": {
+      "type": "transition_id",
+      "content_hash": "7wP389bMu7iPvtc7UXDKDqxWzUidSdnr6uxjGyRRhjxv",
+      "hash": "4bd94r8Smrg7vRXGmhWtYAcn4nhjQS4F1CiHVNPxriuF",
+      "fields": {
+        "id": "4f000bcf-8164-47e3-a212-b7579fa424c7"
+      }
+    },
+    "action:AFW5X2tcLZDDqB8CwErB1jY6EMeuyH6rtX4pvLfgLQbh": {
+      "type": "action",
+      "content_hash": "DcoQjYdQYKa7t5hHgDqssUN6t7ryHHkZZPfezpoQ9z5s",
+      "hash": "9inx3M7WvA8CavFkGXV94kWsh6XGWa2CKK8CRwbF1fRo",
+      "fields": {
+        "ref": "core.sendmail"
+      }
+    },
+    "transition_id:5xRBwUpRMjwkqCjhRLJpASjuBvaiP1PzA6SvULisYMyx": {
+      "type": "transition_id",
+      "content_hash": "6a5NbjHCbUiSwR8YWfhxucek1WVLm6hPjCu9gVhGniTB",
+      "hash": "AgHVxQ4ofAVmqAJ2STTh4icHg9eLX5a3q9kNaUGkCGu6",
+      "fields": {
+        "id": "ed6e81ff-6508-4685-bcd8-f69ecb5607b0"
+      }
+    },
+    "transition_id:2nCizvEuoigFmtBq1TSBKHk1J6VedqeLLHFwqEQ5dMQo": {
+      "type": "transition_id",
+      "content_hash": "4jewmRcjP38jGXS5ATwYY7L7GB5SpbbrjGKT3jE3soix",
+      "hash": "8HwzSAP5rBi3zhueBh6rLFW4RyFjNACLdLFRduw8piyg",
+      "fields": {
+        "id": "5c9bd2b2-aa02-464e-9f8c-2eacac94a826"
+      }
+    },
+    "workflow_task_id:FgBzZuExBnP5KJDjKUaGkBV1A5CyhQZfQNLMR2o1TbLU": {
+      "type": "workflow_task_id",
+      "content_hash": "4TfW4nAUpQfJPUh6atxn3GEJLVrUuRwv6y3HqvEJCFDv",
+      "hash": "7sA2jp8mH8eJqsm7qkKRdE6NBKyiGU6RYafBnoVgK4An",
+      "fields": {
+        "id": "3adcdb238aaa47db878674dd48c539e1"
+      }
+    },
+    "transition_id:FQnVEmh7B83LRzem3YS5V6HMLXtKvnUJKzqzQ1aS7QvH": {
+      "type": "transition_id",
+      "content_hash": "9XXZgEHMrJHfJ6pqrNDujKxd2P7YtiAUaZ1bH8WkKCR",
+      "hash": "C4rCJArCyoSwnWT5yXGkJsRQUgrohNu1WFBaRmYGAJqM",
+      "fields": {
+        "id": "3b44e368-ce0f-484d-8dee-3b4669b09d8c"
+      }
+    },
+    "workflow_task_id:EWrYxw5w7BNKk1ygKugUTD1AXBm4DNWNNwrthQSaZpGn": {
+      "type": "workflow_task_id",
+      "content_hash": "6TV7hobYSKrMpZnoRE4K6oZNEsv9E9HMZUMMq3W3ioS1",
+      "hash": "3CoTJgyQGRjm5jquhbQFKERdRkGyqVTK5Cs8CHotzcLr",
+      "fields": {
+        "id": "a6ca9eb8f53e4e5ba8afc1da3c123966"
+      }
+    },
+    "transition_id:LM43y7QFP9g7GREYecoZijUaV98FdanPLHXWyCMRNpp": {
+      "type": "transition_id",
+      "content_hash": "65yhqzW4URpoWwshESneGkiiz3uorfrjvUF2CrvsVfZZ",
+      "hash": "8z7wnMgjannRLzENgzYCqnpcLrb9GmYysWaF95EV6qso",
+      "fields": {
+        "id": "2300db31-90c5-461e-bc04-a5353c8525fc"
+      }
+    },
+    "workflow_task_id:4aJd8wsMNEhPGok8NoesZq6ww7gasKWSJuHJWxKwbSih": {
+      "type": "workflow_task_id",
+      "content_hash": "3ruifDKifjwG2U8haxyHvv1DqKgeHyxuogm2YEP1e45W",
+      "hash": "GQQ7hBnAPTGYRbUY8tsK9Y7o3rjNNzPPHygzw83dqw8j",
+      "fields": {
+        "id": "c559142089b143939de1723b04d86cfe"
+      }
+    },
+    "transition_id:4wBC1aUwzDUgX1qd1T7ND5euouPyGjMdmaJLG3NsZqg6": {
+      "type": "transition_id",
+      "content_hash": "EXFbYa93X5GxrD5HVQ3vWzrFqgax5dFdHfevr2AsrM1i",
+      "hash": "GbsvRbtavD9wTQKzDmtpKKdDCdDfUExegNr1whkcvA1z",
+      "fields": {
+        "id": "6c9aa883-fabb-4afb-a8ee-8cd73d239d5b"
+      }
+    },
+    "workflow_task_id:CU4qRvySutyVbSF9oyWtTnxz9UHHz1jfabAKEXj3LtSa": {
+      "type": "workflow_task_id",
+      "content_hash": "Dxc7TZoRHhYsCjyfehdJEDG8FDguu3SnCcJJ3Q5vBm5N",
+      "hash": "EEQqVeUQ1c8fiKCZZrYQ23DuVtiM7SxDjd1NExJzFD2J",
+      "fields": {
+        "id": "54d9888416d644b7abb2e6d76ce8b81c"
+      }
+    },
+    "trigger_type:CWJ1fXr4zFVQeyWVBqgzjmfRVhuphwZC81DMGgFz32p": {
+      "type": "trigger_type",
+      "content_hash": "BHPpyh4yVZ17wHeUJv63HWCEWEeD1DZo2JGw8ZX7LWWc",
+      "hash": "DHNvCe8f2XPLuNfxQqZ2Rq2TzpP7QquWfRVYgDL7BFuK",
+      "fields": {
+        "ref": "core.Cron Job"
+      }
+    },
+    "workflow_task_id:Dr5v4xoGXLUN14wL3Zp8WpcmUsdU1SeefF9vEokWs9pc": {
+      "type": "workflow_task_id",
+      "content_hash": "PetsukZjPph53UZQX9rTCrRufefCGUEjWba5B9SBGNB",
+      "hash": "EZSFuRuq3TdJSL1Y1aoe8xcuzE5SzB2vjSmd3QyZPgBK",
+      "fields": {
+        "id": "9a58f811ce1a48d79559696a16c7bc64"
+      }
+    },
+    "action:FHsetLfZTJGxF7wrt1gF7in2BDDB3URbfSkKyzzdbstV": {
+      "type": "action",
+      "content_hash": "23N3ubJaPa6X5iBRydHACFjBkPCx3ojoiFwyDcNZB5a1",
+      "hash": "AchMyaNUwhPjK8j3wVV34tZM4hrNovi1XH4z1MkHzuFP",
+      "fields": {
+        "ref": "microsoft_graph.graph_api_request"
+      }
+    },
+    "workflow_task_id:7xqaPJcwbnXJHUCK5QJMe1CK8c8LqEZaNj8sVJipFtEB": {
+      "type": "workflow_task_id",
+      "content_hash": "7vQM88EChQ7XtVV4ny1xKb87mjPnPsHPuKb2F92oB6qV",
+      "hash": "HXyUDExDRdaRZAedcSsfxx4pyCkvL9PFmjnao3xm2Lhk",
+      "fields": {
+        "id": "ee8b28fd234c4322871aa8167e5fdf23"
+      }
+    },
+    "transition_id:Bc5jzXcmaJKC5TH4ArcYUo4uYxR2dnNZVMDHzVA1EmN": {
+      "type": "transition_id",
+      "content_hash": "4p45axxm3mtC41MpKjrbBxEa345TXAUb9iSrjWCw2ouW",
+      "hash": "BvAAFbDwtcKz5MVLdAuoxU9rEG8XWV8HLQxHKopNN339",
+      "fields": {
+        "id": "4211072d-6b0e-4fcd-801f-7ace1fbd2ace"
+      }
+    },
+    "transition_id:HF3j29T7UH8Zj1PZHEwfZwRK9K87wpvfPbKvVRoMvZUH": {
+      "type": "transition_id",
+      "content_hash": "5ytpA3WXYxbptRFHwDhPYKUbDpFHpM74L6FwXWefv6Fz",
+      "hash": "CjCGXeiZT7bQpaMNMdZQACjbzYgEAukLGE9AfZcTZiLW",
+      "fields": {
+        "id": "83c05aa0-11d2-45ea-8635-d714389357c8"
+      }
+    },
+    "workflow_task_id:6MejEAJRAtSSWAc8FApzjd135tafkeEryeyiQFXcfqgh": {
+      "type": "workflow_task_id",
+      "content_hash": "Fefurw8XNUxEk9zSvxVLypws9xiNCDdEhaUT2RSDrdnT",
+      "hash": "4Um8b9TrkMLG5GE9bjazqnfqciBgYGq1sR5NQmkhu2go",
+      "fields": {
+        "id": "e10fa179d192466381ef00c1c2050d89"
+      }
+    },
+    "workflow_task_id:GoRZWSNjkj8dRmsV4tb8vNey7RwzwvoXqpKdack8vbX3": {
+      "type": "workflow_task_id",
+      "content_hash": "9Uy8awbJWP7pZx8fggKkotgEaP89xyuJ42M99GbrBWv9",
+      "hash": "3iZedor17wskN5tjmDeaD75PYfUaiYAGcE3n66jRt8rt",
+      "fields": {
+        "id": "104beb805c86422e8f11b61ca400158c"
+      }
+    },
+    "transition_id:9iTpao4DY5Gtcxfj7mmSLwrvDhoxPbsguYKaC8HiSQL7": {
+      "type": "transition_id",
+      "content_hash": "3XU3AZHPRHECjCXCiQzngs2TCsZpba7mBkMrKA6UqJ84",
+      "hash": "DMLLhFZvCtGCgeGA6U3Z9M1a9wn91UpksemDm51AzhHk",
+      "fields": {
+        "id": "2bead0a2-160e-4414-b386-f4323eb6248b"
+      }
+    },
+    "transition_id:FTt14dxFKU5FLmAoKfnLd8q97nFGzFXa6HwwBLbYAZV6": {
+      "type": "transition_id",
+      "content_hash": "Y74eSEvWQ57J3VG1ryo2QMYK3eZgRo25awPUeeaJDoh",
+      "hash": "pnwjSGVGH6RohyrYcJNN2mzvr3k3fKDU5koi9HycW8Y",
+      "fields": {
+        "id": "a3d3d1fa-7cf1-4321-bdb4-2014093ad3f2"
+      }
+    },
+    "workflow_task_id:CwvAGvVWMHDvNPbGqn9nerRXjRMH9bLhpgEBjzHzPinJ": {
+      "type": "workflow_task_id",
+      "content_hash": "9DqB9jfvLJZGGBBzgjomWph7EzTrLt3VSsaTFUPSw3r",
+      "hash": "HmfERCCEcySNLfVaTsZUJPPGyZPXniFVNPyc2WryHgWM",
+      "fields": {
+        "id": "7bc8b18f19774e3fb9932d4ba68546bf"
+      }
+    },
+    "workflow_task_id:CQYZRse1EVV8wxnV2kwbgwrTv8F3xKCWrBZWg5dpGZjq": {
+      "type": "workflow_task_id",
+      "content_hash": "D9KKZ21qaoCwtX41G6C2b2spv6y42LiP8JDjuGuVvpkT",
+      "hash": "PsWNom6hpMWBgYaa9QHwizqhdwWBX8dVSdXu6SPfDLK",
+      "fields": {
+        "id": "b9d6e5ac0f6f4202a74d908432f75f11"
+      }
+    },
+    "transition_id:6aMm8rwUA5qDPcb7nesaYNZzTLKzDZNiqQuzSk64ftFz": {
+      "type": "transition_id",
+      "content_hash": "5dWmTFjmrkqRVgKm8Kb7vWFcRrXzpDe7fFq9EF4vnen6",
+      "hash": "BKjyKBuzXKrie8oCfYxre2WRrvK4Wbff4Lyr1jHSRVED",
+      "fields": {
+        "id": "1df9ea84-b005-4bd2-9930-de0a36bb082f"
+      }
+    },
+    "workflow_task_id:3ZfmmDPRkVrAkWdsmeFbDPf8yjhfBBqZGLDPQcZUoJ6H": {
+      "type": "workflow_task_id",
+      "content_hash": "op1PbdZToF4wMJXUpzsuzkyxvWuCdECxUVXgxhgDVPn",
+      "hash": "AYFpNzsWHP8ZbgNxXK1mq26if78kQz1bVSyv4gfcJR1J",
+      "fields": {
+        "id": "a1b9b21ddb8f4b51823056fd607f08bc"
+      }
+    },
+    "workflow_task_id:BPfrmLcpVwf6fiBs1crbdXfZGzDNibmFWApxC9s76mTJ": {
+      "type": "workflow_task_id",
+      "content_hash": "Hi1WgqrVwPv4ccx1HGw6YzjGXChWZ85JfRSfaX5GYyaN",
+      "hash": "ARSvJagrakBbET177iaWaUYLzN2x9yeH8YULA9Kuw9Xn",
+      "fields": {
+        "id": "ffa5b96278de4a5781faa0cb34683ffa"
+      }
+    },
+    "transition_id:ALVJxtupmB9nAPch29Bkd1XouqU9LALWe9QM8FAbT2D6": {
+      "type": "transition_id",
+      "content_hash": "4e7aM73QY3jcJGf5TPKdQhcwg4WU26oNcmG2ejYLvqEF",
+      "hash": "CV9XB9poYpnWhmkXDxZFjbbbUBZQhmUJnYoqWcZgwa41",
+      "fields": {
+        "id": "3616ca05-2fd6-41fa-8ace-fba36e0af686"
+      }
+    },
+    "transition_id:HajyHND5Hptj4VL88XYHXCLVjK8hTMMjv6DwpA3M4Qcq": {
+      "type": "transition_id",
+      "content_hash": "CmMiE3wUHavh6Y61Ez8y5JtysEPFPGgaNw2E9sMeziA",
+      "hash": "CgX9eMNY9tXrKgfUHqhSfxVGXbCyT1yMphjmg7hLAeA4",
+      "fields": {
+        "id": "7afeb243-cac9-493f-bc2d-a35807f42dc3"
+      }
+    },
+    "transition_id:Bsq3Y5Y8JKD1iGjXFaabzvVtikPbnH85eRw8w5pvyF3M": {
+      "type": "transition_id",
+      "content_hash": "GQUbbwNb2sWSFCajC8zSttAxZ4WQ3pmWqc4vRNU2Fatv",
+      "hash": "FFbsvEEwvdtzL9FgBP4fZsMF2mDWGgaUxnac6QExEA3A",
+      "fields": {
+        "id": "2fe362af-82f5-456b-a41d-0d7b78102023"
+      }
+    },
+    "transition_id:9GjwKZzEZaQSebusQA26CC7C7xcmbz8BvajGnct3mZwp": {
+      "type": "transition_id",
+      "content_hash": "66HAsoqbiEfALG9Bs5nMnbeoKFpXYaJtWAugbz2T45CB",
+      "hash": "E1pn7Z3hzqTHLGShdWdw5A1PE14LGy5frV1NNCwUuyMr",
+      "fields": {
+        "id": "ec8eb821-d3a4-4c7b-a0cc-8cabb37a09f4"
+      }
+    },
+    "workflow_task_id:DPAFW6RHi8v6s3av54njtoLCkfW2yMXYXGHVZft9kD8E": {
+      "type": "workflow_task_id",
+      "content_hash": "GsbtAdxsQSCGnZy9Fo4XmmFL5CzAwxbkT5dWkfAijvp6",
+      "hash": "BTarqH272SfsB9jW1eQyfMSWar5tehDMNB3hro1MLAji",
+      "fields": {
+        "id": "2f245aa4f6bc46c49420e4471633bb26"
+      }
+    },
+    "transition_id:ADWoH5qQcUqRM3GX2cqJVoG4CBdSU9fdtVxo3a8ksbcg": {
+      "type": "transition_id",
+      "content_hash": "5prmdEjfgaSgHBAFAWBdpN9Pm79D1YhwWQectneQLgqi",
+      "hash": "7cF8oUc2j24q2DwmJe4by7Q5Bo2x4myuhcZCckEWGrpG",
+      "fields": {
+        "id": "807c8121-6c3e-4d5c-b86d-9f22c5564e2f"
+      }
+    },
+    "transition_id:Fv8Tv5kt6BxQeSAmdH2JxiFPXX9bPnVK4ANdRC2yXnPE": {
+      "type": "transition_id",
+      "content_hash": "3gsuwfoqDP5uMTUfG1uHXpv7fbVgvdfjXixq8aDJm7Ec",
+      "hash": "EQBHAcDJekzWoQbodu8jD6hcbDoGYEaoxuPXYUWuBHyH",
+      "fields": {
+        "id": "82c870dc-1797-48ea-a775-a3f841e7b1e2"
+      }
+    },
+    "workflow_task_id:A14eAEc4C1qCzHpLEhh1deQmbMgSzZnERveuPQWrH7YQ": {
+      "type": "workflow_task_id",
+      "content_hash": "6TXtyt1JHUd6YvSHGJMRv87iQnPeZ5Yjzq12jnTiMTR2",
+      "hash": "3xZqx1N56nGnmUn2wo7SAR6miJmY3hRukTg9Lh7ymtLf",
+      "fields": {
+        "id": "5ef89f343d5b48c6b5a5d1aa3c69f9c1"
+      }
+    },
+    "workflow_task_id:BXXzNUVFZJZs99PpZMazRBspf2qWQxj1cm6oMzKYmqru": {
+      "type": "workflow_task_id",
+      "content_hash": "DiG7uQhB5pMjVNqTokvRs7a8zBAPaZpq1fmiHg94iVeC",
+      "hash": "47WbgrLdEf3GuHusnQLN3RQY6CCvp91ZG4fWnvzv6Cma",
+      "fields": {
+        "id": "b35b311008ec4b58a86424e5c4805208"
+      }
+    },
+    "workflow_task_id:7NNVzWtxCuYS21Mxrb6NsQvyhCwXGS6dEz6Gf3VXa7FA": {
+      "type": "workflow_task_id",
+      "content_hash": "AAmEvqrfRtZ4V9XpEDU2wMTS5RKxWwngC7tdumki75v4",
+      "hash": "AqK6Vkvkz1PXbG3w81gTEzN6HJo1J7pbEi33ADrhbknx",
+      "fields": {
+        "id": "77f482de2d444397b899d7764e1644e1"
+      }
+    },
+    "transition_id:E7EW68yMPW2FJ8hNKPuHgM5AwLu2hneTW44WFWoxTCCT": {
+      "type": "transition_id",
+      "content_hash": "FSutHNg3tgzpJcVSvUDKxzkjwUX6uQMMtm4vDss3qPJk",
+      "hash": "C17tp9SgtZUAuu3cSHdTunSWVzwuaneH1d9aPPrMVasy",
+      "fields": {
+        "id": "26d1df24-fd88-4c14-96a3-8e2e15cad2c1"
+      }
+    },
+    "transition_id:D8TUj1NNEJqAnQ8irFsbiCK6uDwTw96oHQkU7wvQoJqq": {
+      "type": "transition_id",
+      "content_hash": "4FnEk6M6gDjsy5cSXMQAT4rSZw6NPHLs1ToV1AfToMwS",
+      "hash": "GJ2kxQyGst1bTzvpPz3JFqNCeMncV38bRfZctxE6Qttg",
+      "fields": {
+        "id": "47ffc926-f85d-4da7-b724-3976c1055ec5"
+      }
+    },
+    "transition_id:5rDx3auDR76zC5j9JauG3bpqrDVRfqXRFgpyTP1jLbei": {
+      "type": "transition_id",
+      "content_hash": "HTBFA2nwWXxMaLWkYRbX64XGJEfdkkAPUwwoJwbS2RSw",
+      "hash": "6KpyfTJDZh5V9UMYrGY3Dwykki8y9PnphAeQn6u33yJS",
+      "fields": {
+        "id": "f3708276-b2dd-4448-894a-fc9ff71b7c55"
+      }
+    },
+    "action:qCZapmSYp7JNjpLXM3NvrfjUqDprKsMUttiyXPzMMwi": {
+      "type": "action",
+      "content_hash": "CdPL6KHuhM7mBvTHi4QnQbxCitnoxuRrq1BfHNnQYzKB",
+      "hash": "Arr2RCEM96WqU2EkvigszSfsW9GZHa4HJC5a1fL9qZ5g",
+      "fields": {
+        "ref": "core.noop"
+      }
+    },
+    "transition_id:6iC79e8vV3v6m3u68B9KVfvBK9hB4nyqM153KfvskKqe": {
+      "type": "transition_id",
+      "content_hash": "EVTQaJqUfaNayLxGoAJX75RSGNv2p3MkAqfXknSA4uuo",
+      "hash": "5QciCDhtN38UzmuUXjssEvdYZFvum6MaKscn9DumWsAm",
+      "fields": {
+        "id": "83f5d55a-b8ad-42fa-a665-2b3a29cb036f"
+      }
+    },
+    "workflow_task_id:24oVVsGLMukPFMsm289fpdHSRKyWEVxvsaPfLKswZsUr": {
+      "type": "workflow_task_id",
+      "content_hash": "A1qRogefqQkpZCjjm2CrCmP524mnNo8jpCPw6L3phJdo",
+      "hash": "Fk78sJR7Dv9E4p2EuWpYNzvTJJZjZZzHXqCgbZ3T1saj",
+      "fields": {
+        "id": "0f8c36fc26df496d9d2381d0688029e7"
+      }
+    },
+    "workflow:6PUeraMBTi8spRACK5F7d1QQAWYeDiSPQQLdpLurK9qg": {
+      "type": "workflow",
+      "content_hash": "8p4RMYDURNT4biRbQ5s1xCXY6gTuA5au3BxUAhLujbJ",
+      "hash": "4r7UaTD8GjrNbqTtAhus8Buhkd2uoB2Mr4Swy9cpBC3E",
+      "fields": {
+        "humanSecondsSaved": 0,
+        "notes": [],
+        "output": [],
+        "parameters": {},
+        "tasks": [
+          {
+            "id": "@@@workflow_task_id_ref1@@@",
+            "input": {},
+            "join": 0,
+            "retry": null,
+            "mockInput": {},
+            "isMocked": false,
+            "humanSecondsSaved": 0,
+            "timeout": 600,
+            "transitionMode": "FOLLOW_ALL",
+            "publishResultAs": "",
+            "runAsOrgId": "",
+            "with": null,
+            "securitySchema": {},
+            "action": {
+              "id": "@@@action_ref1@@@"
+            },
+            "next": [
+              {
+                "do": [],
+                "id": "@@@transition_id_ref1@@@",
+                "publish": [],
+                "when": "{{ SUCCEEDED }}"
+              }
+            ],
+            "packOverrides": []
+          },
+          {
+            "id": "@@@workflow_task_id_ref2@@@",
+            "input": {},
+            "join": 0,
+            "retry": null,
+            "mockInput": {},
+            "isMocked": false,
+            "humanSecondsSaved": 0,
+            "timeout": 600,
+            "transitionMode": "FOLLOW_ALL",
+            "publishResultAs": "",
+            "runAsOrgId": "",
+            "with": null,
+            "securitySchema": {},
+            "action": {
+              "id": "@@@action_ref1@@@"
+            },
+            "next": [
+              {
+                "do": [
+                  "@@@workflow_task_id_ref20@@@"
+                ],
+                "id": "@@@transition_id_ref2@@@",
+                "publish": [],
+                "when": "{{ CTX.body is defined }}"
+              },
+              {
+                "do": [
+                  "@@@workflow_task_id_ref21@@@"
+                ],
+                "id": "@@@transition_id_ref3@@@",
+                "publish": [],
+                "when": "{{ SUCCEEDED }}"
+              }
+            ],
+            "packOverrides": []
+          },
+          {
+            "id": "@@@workflow_task_id_ref3@@@",
+            "input": {
+              "to": "{{ item() }}",
+              "title": "Microsoft 365 User Utilization",
+              "sender": "noreply",
+              "message": "To view the report, use the hosted report URL for your imported webhook trigger. Replace this placeholder after import.",
+              "subject": "Microsoft 365 User Utilization Report",
+              "custom_html": null,
+              "render_markdown": true
+            },
+            "join": 0,
+            "retry": null,
+            "mockInput": {},
+            "isMocked": false,
+            "humanSecondsSaved": 0,
+            "timeout": 600,
+            "transitionMode": "FOLLOW_ALL",
+            "publishResultAs": "",
+            "runAsOrgId": "",
+            "with": {
+              "items": "{{ CTX.email_addresses | d([]) }}",
+              "concurrency": "5"
+            },
+            "securitySchema": {},
+            "action": {
+              "id": "@@@action_ref2@@@"
+            },
+            "next": [
+              {
+                "do": [
+                  "@@@workflow_task_id_ref1@@@"
+                ],
+                "id": "@@@transition_id_ref4@@@",
+                "publish": [],
+                "when": "{{ SUCCEEDED }}"
+              }
+            ],
+            "packOverrides": []
+          },
+          {
+            "id": "@@@workflow_task_id_ref4@@@",
+            "input": {
+              "json": null,
+              "params": null,
+              "headers": null,
+              "base_url": "https://graph.microsoft.com/v1.0",
+              "endpoint": "/reports/getEmailActivityUserDetail(period='{{ CTX.report_period }}')",
+              "raw_body": null,
+              "client_kwargs": {
+                "use_delegated_admin": false
+              },
+              "request_method": "GET",
+              "raw_body_from_url": null,
+              "require_2xx_status": true
+            },
+            "join": 0,
+            "retry": null,
+            "mockInput": {},
+            "isMocked": false,
+            "humanSecondsSaved": 0,
+            "timeout": 600,
+            "transitionMode": "FOLLOW_ALL",
+            "publishResultAs": "",
+            "runAsOrgId": "",
+            "with": null,
+            "securitySchema": {},
+            "action": {
+              "id": "@@@action_ref3@@@"
+            },
+            "next": [
+              {
+                "do": [
+                  "@@@workflow_task_id_ref13@@@"
+                ],
+                "id": "@@@transition_id_ref5@@@",
+                "publish": [],
+                "when": "{{ SUCCEEDED }}"
+              }
+            ],
+            "packOverrides": []
+          },
+          {
+            "id": "@@@workflow_task_id_ref5@@@",
+            "input": {
+              "json": null,
+              "params": null,
+              "headers": null,
+              "base_url": "https://graph.microsoft.com/v1.0",
+              "endpoint": "/reports/getM365AppUserDetail(period='{{ CTX.report_period }}')",
+              "raw_body": null,
+              "client_kwargs": {
+                "use_delegated_admin": false
+              },
+              "request_method": "GET",
+              "raw_body_from_url": null,
+              "require_2xx_status": true
+            },
+            "join": 0,
+            "retry": null,
+            "mockInput": {},
+            "isMocked": false,
+            "humanSecondsSaved": 0,
+            "timeout": 600,
+            "transitionMode": "FOLLOW_ALL",
+            "publishResultAs": "",
+            "runAsOrgId": "",
+            "with": null,
+            "securitySchema": {},
+            "action": {
+              "id": "@@@action_ref3@@@"
+            },
+            "next": [
+              {
+                "do": [
+                  "@@@workflow_task_id_ref14@@@"
+                ],
+                "id": "@@@transition_id_ref6@@@",
+                "publish": [],
+                "when": "{{ SUCCEEDED }}"
+              }
+            ],
+            "packOverrides": []
+          },
+          {
+            "id": "@@@workflow_task_id_ref6@@@",
+            "input": {
+              "json": null,
+              "params": null,
+              "headers": null,
+              "base_url": "https://graph.microsoft.com/v1.0",
+              "endpoint": "/reports/getOffice365ActiveUserDetail(period='{{ CTX.report_period }}')",
+              "raw_body": null,
+              "client_kwargs": {
+                "use_delegated_admin": false
+              },
+              "request_method": "GET",
+              "raw_body_from_url": null,
+              "require_2xx_status": true
+            },
+            "join": 0,
+            "retry": null,
+            "mockInput": {},
+            "isMocked": false,
+            "humanSecondsSaved": 0,
+            "timeout": 600,
+            "transitionMode": "FOLLOW_ALL",
+            "publishResultAs": "",
+            "runAsOrgId": "",
+            "with": null,
+            "securitySchema": {},
+            "action": {
+              "id": "@@@action_ref3@@@"
+            },
+            "next": [
+              {
+                "do": [
+                  "@@@workflow_task_id_ref15@@@"
+                ],
+                "id": "@@@transition_id_ref7@@@",
+                "publish": [],
+                "when": "{{ SUCCEEDED }}"
+              }
+            ],
+            "packOverrides": []
+          },
+          {
+            "id": "@@@workflow_task_id_ref7@@@",
+            "input": {
+              "json": null,
+              "params": null,
+              "headers": null,
+              "base_url": "https://graph.microsoft.com/v1.0",
+              "endpoint": "/reports/getOneDriveActivityUserDetail(period='{{ CTX.report_period }}')",
+              "raw_body": null,
+              "client_kwargs": {
+                "use_delegated_admin": false
+              },
+              "request_method": "GET",
+              "raw_body_from_url": null,
+              "require_2xx_status": true
+            },
+            "join": 0,
+            "retry": null,
+            "mockInput": {},
+            "isMocked": false,
+            "humanSecondsSaved": 0,
+            "timeout": 600,
+            "transitionMode": "FOLLOW_ALL",
+            "publishResultAs": "",
+            "runAsOrgId": "",
+            "with": null,
+            "securitySchema": {},
+            "action": {
+              "id": "@@@action_ref3@@@"
+            },
+            "next": [
+              {
+                "do": [
+                  "@@@workflow_task_id_ref16@@@"
+                ],
+                "id": "@@@transition_id_ref8@@@",
+                "publish": [],
+                "when": "{{ SUCCEEDED }}"
+              }
+            ],
+            "packOverrides": []
+          },
+          {
+            "id": "@@@workflow_task_id_ref8@@@",
+            "input": {
+              "json": null,
+              "params": null,
+              "headers": null,
+              "base_url": "https://graph.microsoft.com/v1.0",
+              "endpoint": "/reports/getSharePointActivityUserDetail(period='{{ CTX.report_period }}')",
+              "raw_body": null,
+              "client_kwargs": {
+                "use_delegated_admin": false
+              },
+              "request_method": "GET",
+              "raw_body_from_url": null,
+              "require_2xx_status": true
+            },
+            "join": 0,
+            "retry": null,
+            "mockInput": {},
+            "isMocked": false,
+            "humanSecondsSaved": 0,
+            "timeout": 600,
+            "transitionMode": "FOLLOW_ALL",
+            "publishResultAs": "",
+            "runAsOrgId": "",
+            "with": null,
+            "securitySchema": {},
+            "action": {
+              "id": "@@@action_ref3@@@"
+            },
+            "next": [
+              {
+                "do": [
+                  "@@@workflow_task_id_ref17@@@"
+                ],
+                "id": "@@@transition_id_ref9@@@",
+                "publish": [],
+                "when": "{{ SUCCEEDED }}"
+              }
+            ],
+            "packOverrides": []
+          },
+          {
+            "id": "@@@workflow_task_id_ref9@@@",
+            "input": {
+              "json": null,
+              "params": null,
+              "headers": null,
+              "base_url": "https://graph.microsoft.com/v1.0",
+              "endpoint": "/subscribedSkus",
+              "raw_body": null,
+              "client_kwargs": {
+                "use_delegated_admin": false
+              },
+              "request_method": "GET",
+              "raw_body_from_url": null,
+              "require_2xx_status": true
+            },
+            "join": 0,
+            "retry": null,
+            "mockInput": {},
+            "isMocked": false,
+            "humanSecondsSaved": 0,
+            "timeout": 600,
+            "transitionMode": "FOLLOW_ALL",
+            "publishResultAs": "",
+            "runAsOrgId": "",
+            "with": null,
+            "securitySchema": {},
+            "action": {
+              "id": "@@@action_ref3@@@"
+            },
+            "next": [
+              {
+                "do": [
+                  "@@@workflow_task_id_ref12@@@"
+                ],
+                "id": "@@@transition_id_ref10@@@",
+                "publish": [],
+                "when": "{{ SUCCEEDED }}"
+              }
+            ],
+            "packOverrides": []
+          },
+          {
+            "id": "@@@workflow_task_id_ref10@@@",
+            "input": {
+              "json": null,
+              "params": null,
+              "headers": null,
+              "base_url": "https://graph.microsoft.com/v1.0",
+              "endpoint": "/reports/getTeamsUserActivityUserDetail(period='{{ CTX.report_period }}')",
+              "raw_body": null,
+              "client_kwargs": {
+                "use_delegated_admin": false
+              },
+              "request_method": "GET",
+              "raw_body_from_url": null,
+              "require_2xx_status": true
+            },
+            "join": 0,
+            "retry": null,
+            "mockInput": {},
+            "isMocked": false,
+            "humanSecondsSaved": 0,
+            "timeout": 600,
+            "transitionMode": "FOLLOW_ALL",
+            "publishResultAs": "",
+            "runAsOrgId": "",
+            "with": null,
+            "securitySchema": {},
+            "action": {
+              "id": "@@@action_ref3@@@"
+            },
+            "next": [
+              {
+                "do": [
+                  "@@@workflow_task_id_ref18@@@"
+                ],
+                "id": "@@@transition_id_ref11@@@",
+                "publish": [],
+                "when": "{{ SUCCEEDED }}"
+              }
+            ],
+            "packOverrides": []
+          },
+          {
+            "id": "@@@workflow_task_id_ref11@@@",
+            "input": {
+              "json": null,
+              "params": null,
+              "headers": null,
+              "base_url": "https://graph.microsoft.com/v1.0",
+              "endpoint": "/users?$select=id,displayName,userPrincipalName,mail,userType,department,jobTitle,companyName,accountEnabled,createdDateTime,assignedLicenses,assignedPlans,signInActivity&$top=500",
+              "raw_body": null,
+              "client_kwargs": {
+                "use_delegated_admin": false
+              },
+              "request_method": "GET",
+              "raw_body_from_url": null,
+              "require_2xx_status": true
+            },
+            "join": 0,
+            "retry": null,
+            "mockInput": {},
+            "isMocked": false,
+            "humanSecondsSaved": 0,
+            "timeout": 600,
+            "transitionMode": "FOLLOW_ALL",
+            "publishResultAs": "",
+            "runAsOrgId": "",
+            "with": null,
+            "securitySchema": {},
+            "action": {
+              "id": "@@@action_ref3@@@"
+            },
+            "next": [
+              {
+                "do": [
+                  "@@@workflow_task_id_ref12@@@"
+                ],
+                "id": "@@@transition_id_ref12@@@",
+                "publish": [],
+                "when": "{{ SUCCEEDED }}"
+              }
+            ],
+            "packOverrides": []
+          },
+          {
+            "id": "@@@workflow_task_id_ref12@@@",
+            "input": {},
+            "join": 0,
+            "retry": null,
+            "mockInput": {},
+            "isMocked": false,
+            "humanSecondsSaved": 0,
+            "timeout": 600,
+            "transitionMode": "FOLLOW_ALL",
+            "publishResultAs": "",
+            "runAsOrgId": "",
+            "with": null,
+            "securitySchema": {},
+            "action": {
+              "id": "@@@action_ref1@@@"
+            },
+            "next": [
+              {
+                "do": [
+                  "@@@workflow_task_id_ref19@@@"
+                ],
+                "id": "@@@transition_id_ref13@@@",
+                "publish": [
+                  {
+                    "report_data": "{% set users = TASKS.fetch_users_baseline.result.result.data.value | d(TASKS.fetch_users_baseline.result.data.value | d(TASKS.fetch_users_baseline.result.result.value | d(TASKS.fetch_users_baseline.result.value | d(TASKS.fetch_users_baseline.result.result | d(TASKS.fetch_users_baseline.result | d([])))))) %}\n{% set skus = TASKS.fetch_subscribed_skus.result.result.data.value | d(TASKS.fetch_subscribed_skus.result.data.value | d(TASKS.fetch_subscribed_skus.result.result.value | d(TASKS.fetch_subscribed_skus.result.value | d(TASKS.fetch_subscribed_skus.result.result | d(TASKS.fetch_subscribed_skus.result | d([])))))) %}\n{% set office_csv = (TASKS.parse_office_activity_csv.result.result.data | d(TASKS.parse_office_activity_csv.result.data | d(TASKS.parse_office_activity_csv.result.text | d(TASKS.parse_office_activity_csv.result.body | d(TASKS.parse_office_activity_csv.result.result | d(TASKS.parse_office_activity_csv.result | d(''))))))) | string | replace('\\ufeff', '') | replace('\\r\\n', '\\n') | replace('\\r', '\\n') %}\n{% set office_rows = [] %}\n{% set office_lines = office_csv.split('\\n') %}\n{% set office_headers = office_lines[0].split(',') if office_lines | length > 0 else [] %}\n{% for line in office_lines[1:] %}\n    {% set trimmed = line | trim %}\n    {% if trimmed %}\n        {% set cells = trimmed.split(',') %}\n        {% set row = {} %}\n        {% for header in office_headers %}\n            {% set _ = row.update({(header | replace('\\ufeff', '') | trim): (cells[loop.index0] | d('') | trim)}) %}\n        {% endfor %}\n        {% set _ = office_rows.append(row) %}\n    {% endif %}\n{% endfor %}\n{% set email_csv = (TASKS.parse_email_activity_csv.result.result.data | d(TASKS.parse_email_activity_csv.result.data | d(TASKS.parse_email_activity_csv.result.text | d(TASKS.parse_email_activity_csv.result.body | d(TASKS.parse_email_activity_csv.result.result | d(TASKS.parse_email_activity_csv.result | d(''))))))) | string | replace('\\ufeff', '') | replace('\\r\\n', '\\n') | replace('\\r', '\\n') %}\n{% set email_rows = [] %}\n{% set email_lines = email_csv.split('\\n') %}\n{% set email_headers = email_lines[0].split(',') if email_lines | length > 0 else [] %}\n{% for line in email_lines[1:] %}\n    {% set trimmed = line | trim %}\n    {% if trimmed %}\n        {% set cells = trimmed.split(',') %}\n        {% set row = {} %}\n        {% for header in email_headers %}\n            {% set _ = row.update({(header | replace('\\ufeff', '') | trim): (cells[loop.index0] | d('') | trim)}) %}\n        {% endfor %}\n        {% set _ = email_rows.append(row) %}\n    {% endif %}\n{% endfor %}\n{% set teams_csv = (TASKS.parse_teams_activity_csv.result.result.data | d(TASKS.parse_teams_activity_csv.result.data | d(TASKS.parse_teams_activity_csv.result.text | d(TASKS.parse_teams_activity_csv.result.body | d(TASKS.parse_teams_activity_csv.result.result | d(TASKS.parse_teams_activity_csv.result | d(''))))))) | string | replace('\\ufeff', '') | replace('\\r\\n', '\\n') | replace('\\r', '\\n') %}\n{% set teams_rows = [] %}\n{% set teams_lines = teams_csv.split('\\n') %}\n{% set teams_headers = teams_lines[0].split(',') if teams_lines | length > 0 else [] %}\n{% for line in teams_lines[1:] %}\n    {% set trimmed = line | trim %}\n    {% if trimmed %}\n        {% set cells = trimmed.split(',') %}\n        {% set row = {} %}\n        {% for header in teams_headers %}\n            {% set _ = row.update({(header | replace('\\ufeff', '') | trim): (cells[loop.index0] | d('') | trim)}) %}\n        {% endfor %}\n        {% set _ = teams_rows.append(row) %}\n    {% endif %}\n{% endfor %}\n{% set onedrive_csv = (TASKS.parse_onedrive_activity_csv.result.result.data | d(TASKS.parse_onedrive_activity_csv.result.data | d(TASKS.parse_onedrive_activity_csv.result.text | d(TASKS.parse_onedrive_activity_csv.result.body | d(TASKS.parse_onedrive_activity_csv.result.result | d(TASKS.parse_onedrive_activity_csv.result | d(''))))))) | string | replace('\\ufeff', '') | replace('\\r\\n', '\\n') | replace('\\r', '\\n') %}\n{% set onedrive_rows = [] %}\n{% set onedrive_lines = onedrive_csv.split('\\n') %}\n{% set onedrive_headers = onedrive_lines[0].split(',') if onedrive_lines | length > 0 else [] %}\n{% for line in onedrive_lines[1:] %}\n    {% set trimmed = line | trim %}\n    {% if trimmed %}\n        {% set cells = trimmed.split(',') %}\n        {% set row = {} %}\n        {% for header in onedrive_headers %}\n            {% set _ = row.update({(header | replace('\\ufeff', '') | trim): (cells[loop.index0] | d('') | trim)}) %}\n        {% endfor %}\n        {% set _ = onedrive_rows.append(row) %}\n    {% endif %}\n{% endfor %}\n{% set sharepoint_csv = (TASKS.parse_sharepoint_activity_csv.result.result.data | d(TASKS.parse_sharepoint_activity_csv.result.data | d(TASKS.parse_sharepoint_activity_csv.result.text | d(TASKS.parse_sharepoint_activity_csv.result.body | d(TASKS.parse_sharepoint_activity_csv.result.result | d(TASKS.parse_sharepoint_activity_csv.result | d(''))))))) | string | replace('\\ufeff', '') | replace('\\r\\n', '\\n') | replace('\\r', '\\n') %}\n{% set sharepoint_rows = [] %}\n{% set sharepoint_lines = sharepoint_csv.split('\\n') %}\n{% set sharepoint_headers = sharepoint_lines[0].split(',') if sharepoint_lines | length > 0 else [] %}\n{% for line in sharepoint_lines[1:] %}\n    {% set trimmed = line | trim %}\n    {% if trimmed %}\n        {% set cells = trimmed.split(',') %}\n        {% set row = {} %}\n        {% for header in sharepoint_headers %}\n            {% set _ = row.update({(header | replace('\\ufeff', '') | trim): (cells[loop.index0] | d('') | trim)}) %}\n        {% endfor %}\n        {% set _ = sharepoint_rows.append(row) %}\n    {% endif %}\n{% endfor %}\n{% set m365app_csv = (TASKS.parse_m365app_activity_csv.result.result.data | d(TASKS.parse_m365app_activity_csv.result.data | d(TASKS.parse_m365app_activity_csv.result.text | d(TASKS.parse_m365app_activity_csv.result.body | d(TASKS.parse_m365app_activity_csv.result.result | d(TASKS.parse_m365app_activity_csv.result | d(''))))))) | string | replace('\\ufeff', '') | replace('\\r\\n', '\\n') | replace('\\r', '\\n') %}\n{% set m365app_rows = [] %}\n{% set m365app_lines = m365app_csv.split('\\n') %}\n{% set m365app_headers = m365app_lines[0].split(',') if m365app_lines | length > 0 else [] %}\n{% for line in m365app_lines[1:] %}\n    {% set trimmed = line | trim %}\n    {% if trimmed %}\n        {% set cells = trimmed.split(',') %}\n        {% set row = {} %}\n        {% for header in m365app_headers %}\n            {% set _ = row.update({(header | replace('\\ufeff', '') | trim): (cells[loop.index0] | d('') | trim)}) %}\n        {% endfor %}\n        {% set _ = m365app_rows.append(row) %}\n    {% endif %}\n{% endfor %}\n\n{% set sku_map = {} %}\n{% for sku in skus %}\n    {% set sku_id = sku.skuId | d('') %}\n    {% if sku_id %}\n        {% set _ = sku_map.update({sku_id: {\n            'sku_part_number': sku.skuPartNumber | d('Unknown SKU'),\n            'display_name': sku.skuPartNumber | d('Unknown SKU'),\n            'consumed_units': sku.consumedUnits | d(0) | int,\n            'enabled_units': sku.prepaidUnits.enabled | d(0) | int\n        }}) %}\n    {% endif %}\n{% endfor %}\n\n{% set office_map = {} %}\n{% for row in office_rows %}\n    {% set upn = (row['User Principal Name'] | d(row['User Principal Name ']) | d(row.userPrincipalName) | d(row['UPN']) | d('')) | lower %}\n    {% if upn %}{% set _ = office_map.update({upn: row}) %}{% endif %}\n{% endfor %}\n{% set email_map = {} %}\n{% for row in email_rows %}\n    {% set upn = (row['User Principal Name'] | d(row['User Principal Name ']) | d(row.userPrincipalName) | d(row['UPN']) | d('')) | lower %}\n    {% if upn %}{% set _ = email_map.update({upn: row}) %}{% endif %}\n{% endfor %}\n{% set teams_map = {} %}\n{% for row in teams_rows %}\n    {% set upn = (row['User Principal Name'] | d(row['User Principal Name ']) | d(row.userPrincipalName) | d(row['UPN']) | d('')) | lower %}\n    {% if upn %}{% set _ = teams_map.update({upn: row}) %}{% endif %}\n{% endfor %}\n{% set onedrive_map = {} %}\n{% for row in onedrive_rows %}\n    {% set upn = (row['User Principal Name'] | d(row['User Principal Name ']) | d(row.userPrincipalName) | d(row['UPN']) | d('')) | lower %}\n    {% if upn %}{% set _ = onedrive_map.update({upn: row}) %}{% endif %}\n{% endfor %}\n{% set sharepoint_map = {} %}\n{% for row in sharepoint_rows %}\n    {% set upn = (row['User Principal Name'] | d(row['User Principal Name ']) | d(row.userPrincipalName) | d(row['UPN']) | d('')) | lower %}\n    {% if upn %}{% set _ = sharepoint_map.update({upn: row}) %}{% endif %}\n{% endfor %}\n{% set m365app_map = {} %}\n{% for row in m365app_rows %}\n    {% set upn = (row['User Principal Name'] | d(row['User Principal Name ']) | d(row.userPrincipalName) | d(row['UPN']) | d('')) | lower %}\n    {% if upn %}{% set _ = m365app_map.update({upn: row}) %}{% endif %}\n{% endfor %}\n\n{% set stale_cutoff = UTILS.now() | convert_from_epoch | time_delta(days=-(CTX.stale_days | int)) | format_datetime('%Y-%m-%dT%H:%M:%S') %}\n{% set recent_cutoff = UTILS.now() | convert_from_epoch | time_delta(days=-(CTX.report_window_days | int)) | format_datetime('%Y-%m-%dT%H:%M:%S') %}\n\n{% set data = {\n    'tenant_name': CTX.tenant_name,\n    'report_period': CTX.report_period,\n    'stale_days': CTX.stale_days | int,\n    'generated_at': UTILS.now() | convert_from_epoch | format_datetime('%Y-%m-%d %H:%M UTC'),\n    'notes': [\n        'Focused on the selected tenant for this community build.',\n        'Workload usage reports are delayed by Microsoft and should be treated as operational reporting, not real-time telemetry.',\n        'User baseline currently pulls up to 500 users in one pass; expand paging if tenant growth exceeds that.'\n    ],\n    'summary': {},\n    'pricing_summary': {},\n    'workload_summary': {},\n    'user_rows': [],\n    'stale_rows': [],\n    'license_rows': [],\n    'recommendation_rows': []\n} %}\n{% set counters = namespace(total=0, enabled=0, licensed=0, active=0, low=0, stale=0, excluded=0, no_workload=0, unlicensed=0) %}\n{% set workload = namespace(office=0, email=0, teams=0, onedrive=0, sharepoint=0, m365app=0) %}\n{% set price_map = {\n    'AAD_PREMIUM_P2': {'monthly': 9.00, 'source': 'Microsoft Entra ID P2'},\n    'Microsoft_365_E3_(no_Teams)': {'monthly': 27.45, 'source': 'Microsoft 365 E3 (no Teams)'},\n    'Microsoft_365_Copilot': {'monthly': 30.00, 'source': 'Microsoft 365 Copilot'},\n    'POWER_BI_STANDARD': {'monthly': 14.00, 'source': 'Power BI Pro'},\n    'PBI_PREMIUM_PER_USER': {'monthly': 24.00, 'source': 'Power BI Premium Per User'},\n    'PROJECTPREMIUM': {'monthly': 55.00, 'source': 'Planner and Project Plan 5'},\n    'FLOW_FREE': {'monthly': 0.00, 'source': 'Free'},\n    'Microsoft_Teams_Enterprise_New': {'monthly': 8.55, 'source': 'Microsoft Teams Enterprise'}\n} %}\n{% set priced_totals = namespace(monthly=0, stale_monthly=0, low_monthly=0, no_workload_monthly=0, priced_assignments=0, total_assignments=0) %}\n{% set license_map = {} %}\n\n{% for user in users %}\n    {% set upn = (user.userPrincipalName | d(user.mail) | d('')) | lower %}\n    {% if not upn %}{% continue %}{% endif %}\n    {% set counters.total = counters.total + 1 %}\n    {% set account_enabled = user.accountEnabled | d(true) %}\n    {% if account_enabled %}{% set counters.enabled = counters.enabled + 1 %}{% endif %}\n    {% set assigned_licenses = user.assignedLicenses | d([]) %}\n    {% set assigned_plans = user.assignedPlans | d([]) %}\n    {% set license_names = [] %}\n    {% for lic in assigned_licenses %}\n        {% set sku_id = lic.skuId | d('') %}\n        {% if sku_id in sku_map %}\n            {% set _ = license_names.append(sku_map[sku_id].sku_part_number) %}\n        {% elif sku_id %}\n            {% set _ = license_names.append(sku_id) %}\n        {% endif %}\n    {% endfor %}\n    {% set licensed = license_names | length > 0 %}\n    {% if licensed %}{% set counters.licensed = counters.licensed + 1 %}{% else %}{% set counters.unlicensed = counters.unlicensed + 1 %}{% endif %}\n    {% set cost_ref = namespace(monthly=0.0, priced_licenses=[], unpriced_licenses=[]) %}\n    {% for license_name in license_names %}\n        {% set priced_totals.total_assignments = priced_totals.total_assignments + 1 %}\n        {% if license_name in price_map %}\n            {% set cost_ref.monthly = cost_ref.monthly + price_map[license_name].monthly %}\n            {% set priced_totals.monthly = priced_totals.monthly + price_map[license_name].monthly %}\n            {% set priced_totals.priced_assignments = priced_totals.priced_assignments + 1 %}\n            {% set _ = cost_ref.priced_licenses.append(license_name) %}\n        {% else %}\n            {% set _ = cost_ref.unpriced_licenses.append(license_name) %}\n        {% endif %}\n    {% endfor %}\n\n    {% set excluded_ref = namespace(value=false) %}\n    {% for pattern in CTX.exclusion_patterns | d([]) %}\n        {% if pattern and (pattern | lower) in upn %}\n            {% set excluded_ref.value = true %}\n        {% endif %}\n    {% endfor %}\n    {% if excluded_ref.value %}{% set counters.excluded = counters.excluded + 1 %}{% endif %}\n\n    {% set sign_in = user.signInActivity | d({}) %}\n    {% set last_success = sign_in.lastSuccessfulSignInDateTime | d('') %}\n    {% set recent_signin = last_success and (last_success[:19] >= recent_cutoff[:19]) %}\n    {% set stale = licensed and account_enabled and (not last_success or last_success[:19] < stale_cutoff[:19]) %}\n    {% if stale %}{% set counters.stale = counters.stale + 1 %}{% endif %}\n\n    {% set office_active = upn in office_map and (office_map[upn]['Last Activity Date'] | d('')) != '' %}\n    {% set email_active = upn in email_map and (email_map[upn]['Last Activity Date'] | d('')) != '' %}\n    {% set teams_active = upn in teams_map and (teams_map[upn]['Last Activity Date'] | d('')) != '' %}\n    {% set onedrive_active = upn in onedrive_map and (onedrive_map[upn]['Last Activity Date'] | d('')) != '' %}\n    {% set sharepoint_active = upn in sharepoint_map and (sharepoint_map[upn]['Last Activity Date'] | d('')) != '' %}\n    {% set m365app_active = upn in m365app_map and (m365app_map[upn]['Last Activity Date'] | d('')) != '' %}\n\n    {% if office_active %}{% set workload.office = workload.office + 1 %}{% endif %}\n    {% if email_active %}{% set workload.email = workload.email + 1 %}{% endif %}\n    {% if teams_active %}{% set workload.teams = workload.teams + 1 %}{% endif %}\n    {% if onedrive_active %}{% set workload.onedrive = workload.onedrive + 1 %}{% endif %}\n    {% if sharepoint_active %}{% set workload.sharepoint = workload.sharepoint + 1 %}{% endif %}\n    {% if m365app_active %}{% set workload.m365app = workload.m365app + 1 %}{% endif %}\n\n    {% set workload_count = (1 if office_active else 0) + (1 if email_active else 0) + (1 if teams_active else 0) + (1 if onedrive_active else 0) + (1 if sharepoint_active else 0) + (1 if m365app_active else 0) %}\n    {% set no_workload = licensed and (workload_count == 0) and not stale %}\n    {% if no_workload %}{% set counters.no_workload = counters.no_workload + 1 %}{% endif %}\n\n    {% set utilization_score = 0 %}\n    {% if recent_signin %}{% set utilization_score = utilization_score + 18 %}{% endif %}\n    {% if office_active %}{% set utilization_score = utilization_score + 22 %}{% endif %}\n    {% if email_active %}{% set utilization_score = utilization_score + 12 %}{% endif %}\n    {% if teams_active %}{% set utilization_score = utilization_score + 14 %}{% endif %}\n    {% if onedrive_active %}{% set utilization_score = utilization_score + 10 %}{% endif %}\n    {% if sharepoint_active %}{% set utilization_score = utilization_score + 12 %}{% endif %}\n    {% if m365app_active %}{% set utilization_score = utilization_score + 12 %}{% endif %}\n    {% if utilization_score > 100 %}{% set utilization_score = 100 %}{% endif %}\n\n    {% if excluded_ref.value %}\n        {% set classification = 'Excluded from scoring' %}\n        {% set recommendation = 'Exclude from hygiene scoring or tag as service/shared account.' %}\n    {% elif not licensed %}\n        {% set classification = 'Unlicensed or not in scope' %}\n        {% set recommendation = 'Confirm whether the user should remain in the tenant baseline.' %}\n    {% elif stale %}\n        {% set classification = 'Licensed and stale' %}\n        {% set recommendation = 'Investigate disablement or reclaim assigned licenses.' %}\n    {% elif no_workload and recent_signin %}\n        {% set classification = 'Licensed, signs in, but no workload evidence' %}\n        {% set recommendation = 'Review whether assigned products are oversized for the user.' %}\n    {% elif workload_count <= 1 %}\n        {% set classification = 'Licensed but low utilization' %}\n        {% set recommendation = 'Check workload fit and consider license optimization.' %}\n    {% else %}\n        {% set classification = 'Licensed and active' %}\n        {% set recommendation = 'Healthy usage footprint. Monitor normally.' %}\n        {% set counters.active = counters.active + 1 %}\n    {% endif %}\n    {% if classification == 'Licensed but low utilization' %}{% set counters.low = counters.low + 1 %}{% endif %}\n    {% if stale %}{% set priced_totals.stale_monthly = priced_totals.stale_monthly + cost_ref.monthly %}{% endif %}\n    {% if classification == 'Licensed but low utilization' %}{% set priced_totals.low_monthly = priced_totals.low_monthly + cost_ref.monthly %}{% endif %}\n    {% if classification == 'Licensed, signs in, but no workload evidence' %}{% set priced_totals.no_workload_monthly = priced_totals.no_workload_monthly + cost_ref.monthly %}{% endif %}\n\n    {% set row = {\n        'display_name': user.displayName | d('Unknown User'),\n        'user_principal_name': user.userPrincipalName | d(user.mail) | d(''),\n        'department': user.department | d(''),\n        'job_title': user.jobTitle | d(''),\n        'account_enabled': account_enabled,\n        'licensed': licensed,\n        'license_count': license_names | length,\n        'license_names': license_names,\n        'primary_license': license_names | first | d('Unlicensed'),\n        'last_successful_signin': last_success,\n        'recent_signin': recent_signin,\n        'stale': stale,\n        'excluded': excluded_ref.value,\n        'office_active': office_active,\n        'email_active': email_active,\n        'teams_active': teams_active,\n        'onedrive_active': onedrive_active,\n        'sharepoint_active': sharepoint_active,\n        'm365app_active': m365app_active,\n        'workload_count': workload_count,\n        'utilization_score': utilization_score,\n        'classification': classification,\n        'recommendation': recommendation,\n        'assigned_plan_count': assigned_plans | length,\n        'estimated_monthly_cost': cost_ref.monthly,\n        'priced_licenses': cost_ref.priced_licenses,\n        'unpriced_licenses': cost_ref.unpriced_licenses\n    } %}\n    {% set _ = data.user_rows.append(row) %}\n    {% if stale %}{% set _ = data.stale_rows.append(row) %}{% endif %}\n    {% if classification != 'Licensed and active' %}{% set _ = data.recommendation_rows.append(row) %}{% endif %}\n\n    {% for license_name in license_names %}\n        {% if license_name not in license_map %}\n            {% set _ = license_map.update({license_name: {\n                'license_name': license_name,\n                'monthly_price': (price_map[license_name].monthly if license_name in price_map else none),\n                'source': (price_map[license_name].source if license_name in price_map else 'Not priced'),\n                'assigned_users': 0,\n                'active_users': 0,\n                'stale_users': [],\n                'no_workload_users': 0,\n                'excluded_users': 0,\n                'total_monthly_cost': 0.0,\n                'stale_monthly_cost': 0.0\n            }}) %}\n        {% endif %}\n        {% set _ = license_map[license_name].update({'assigned_users': license_map[license_name].assigned_users + 1}) %}\n        {% if license_name in price_map %}\n            {% set _ = license_map[license_name].update({'total_monthly_cost': license_map[license_name].total_monthly_cost + price_map[license_name].monthly}) %}\n        {% endif %}\n        {% if classification == 'Licensed and active' %}\n            {% set _ = license_map[license_name].update({'active_users': license_map[license_name].active_users + 1}) %}\n        {% endif %}\n        {% if stale %}\n            {% set _ = license_map[license_name].stale_users.append({\n                'display_name': row.display_name,\n                'user_principal_name': row.user_principal_name,\n                'last_successful_signin': row.last_successful_signin,\n                'estimated_monthly_cost': row.estimated_monthly_cost,\n                'monthly_price': (price_map[license_name].monthly if license_name in price_map else none)\n            }) %}\n            {% if license_name in price_map %}\n                {% set _ = license_map[license_name].update({'stale_monthly_cost': license_map[license_name].stale_monthly_cost + price_map[license_name].monthly}) %}\n            {% endif %}\n        {% endif %}\n        {% if no_workload %}\n            {% set _ = license_map[license_name].update({'no_workload_users': license_map[license_name].no_workload_users + 1}) %}\n        {% endif %}\n        {% if excluded_ref.value %}\n            {% set _ = license_map[license_name].update({'excluded_users': license_map[license_name].excluded_users + 1}) %}\n        {% endif %}\n    {% endfor %}\n{% endfor %}\n\n{% for license_name, record in license_map.items() %}\n    {% set _ = data.license_rows.append(record) %}\n{% endfor %}\n\n{% set _ = data.update({\n    'summary': {\n        'total_users': counters.total,\n        'enabled_users': counters.enabled,\n        'licensed_users': counters.licensed,\n        'active_users': counters.active,\n        'low_utilization_users': counters.low,\n        'stale_users': counters.stale,\n        'no_workload_users': counters.no_workload,\n        'excluded_users': counters.excluded,\n        'unlicensed_users': counters.unlicensed\n    },\n    'pricing_summary': {\n        'tenant_monthly_cost': priced_totals.monthly,\n        'stale_monthly_reclaim': priced_totals.stale_monthly,\n        'stale_annual_reclaim': priced_totals.stale_monthly * 12,\n        'low_monthly_review': priced_totals.low_monthly,\n        'no_workload_monthly_review': priced_totals.no_workload_monthly,\n        'priced_assignment_count': priced_totals.priced_assignments,\n        'total_assignment_count': priced_totals.total_assignments\n    },\n    'workload_summary': {\n        'office': workload.office,\n        'email': workload.email,\n        'teams': workload.teams,\n        'onedrive': workload.onedrive,\n        'sharepoint': workload.sharepoint,\n        'm365app': workload.m365app\n    }\n}) %}\n{{- data | tojson -}}\n"
+                  }
+                ],
+                "when": "{{ SUCCEEDED }}"
+              }
+            ],
+            "packOverrides": []
+          },
+          {
+            "id": "@@@workflow_task_id_ref13@@@",
+            "input": {
+              "url": "{{ TASKS.fetch_email_activity_report.result.result.response.headers.location | d(TASKS.fetch_email_activity_report.result.response.headers.location) }}",
+              "method": "GET",
+              "timeout": 30,
+              "require_2xx_status": true
+            },
+            "join": 0,
+            "retry": null,
+            "mockInput": {},
+            "isMocked": false,
+            "humanSecondsSaved": 0,
+            "timeout": 600,
+            "transitionMode": "FOLLOW_ALL",
+            "publishResultAs": "",
+            "runAsOrgId": "",
+            "with": null,
+            "securitySchema": {},
+            "action": {
+              "id": "@@@action_ref4@@@"
+            },
+            "next": [
+              {
+                "do": [
+                  "@@@workflow_task_id_ref10@@@"
+                ],
+                "id": "@@@transition_id_ref14@@@",
+                "publish": [],
+                "when": "{{ SUCCEEDED }}"
+              }
+            ],
+            "packOverrides": []
+          },
+          {
+            "id": "@@@workflow_task_id_ref14@@@",
+            "input": {
+              "url": "{{ TASKS.fetch_m365app_activity_report.result.result.response.headers.location | d(TASKS.fetch_m365app_activity_report.result.response.headers.location) }}",
+              "method": "GET",
+              "timeout": 30,
+              "require_2xx_status": true
+            },
+            "join": 0,
+            "retry": null,
+            "mockInput": {},
+            "isMocked": false,
+            "humanSecondsSaved": 0,
+            "timeout": 600,
+            "transitionMode": "FOLLOW_ALL",
+            "publishResultAs": "",
+            "runAsOrgId": "",
+            "with": null,
+            "securitySchema": {},
+            "action": {
+              "id": "@@@action_ref4@@@"
+            },
+            "next": [
+              {
+                "do": [
+                  "@@@workflow_task_id_ref12@@@"
+                ],
+                "id": "@@@transition_id_ref15@@@",
+                "publish": [],
+                "when": "{{ SUCCEEDED }}"
+              }
+            ],
+            "packOverrides": []
+          },
+          {
+            "id": "@@@workflow_task_id_ref15@@@",
+            "input": {
+              "url": "{{ TASKS.fetch_office_activity_report.result.result.response.headers.location | d(TASKS.fetch_office_activity_report.result.response.headers.location) }}",
+              "method": "GET",
+              "timeout": 30,
+              "require_2xx_status": true
+            },
+            "join": 0,
+            "retry": null,
+            "mockInput": {},
+            "isMocked": false,
+            "humanSecondsSaved": 0,
+            "timeout": 600,
+            "transitionMode": "FOLLOW_ALL",
+            "publishResultAs": "",
+            "runAsOrgId": "",
+            "with": null,
+            "securitySchema": {},
+            "action": {
+              "id": "@@@action_ref4@@@"
+            },
+            "next": [
+              {
+                "do": [
+                  "@@@workflow_task_id_ref4@@@"
+                ],
+                "id": "@@@transition_id_ref16@@@",
+                "publish": [],
+                "when": "{{ SUCCEEDED }}"
+              }
+            ],
+            "packOverrides": []
+          },
+          {
+            "id": "@@@workflow_task_id_ref16@@@",
+            "input": {
+              "url": "{{ TASKS.fetch_onedrive_activity_report.result.result.response.headers.location | d(TASKS.fetch_onedrive_activity_report.result.response.headers.location) }}",
+              "method": "GET",
+              "timeout": 30,
+              "require_2xx_status": true
+            },
+            "join": 0,
+            "retry": null,
+            "mockInput": {},
+            "isMocked": false,
+            "humanSecondsSaved": 0,
+            "timeout": 600,
+            "transitionMode": "FOLLOW_ALL",
+            "publishResultAs": "",
+            "runAsOrgId": "",
+            "with": null,
+            "securitySchema": {},
+            "action": {
+              "id": "@@@action_ref4@@@"
+            },
+            "next": [
+              {
+                "do": [
+                  "@@@workflow_task_id_ref8@@@"
+                ],
+                "id": "@@@transition_id_ref17@@@",
+                "publish": [],
+                "when": "{{ SUCCEEDED }}"
+              }
+            ],
+            "packOverrides": []
+          },
+          {
+            "id": "@@@workflow_task_id_ref17@@@",
+            "input": {
+              "url": "{{ TASKS.fetch_sharepoint_activity_report.result.result.response.headers.location | d(TASKS.fetch_sharepoint_activity_report.result.response.headers.location) }}",
+              "method": "GET",
+              "timeout": 30,
+              "require_2xx_status": true
+            },
+            "join": 0,
+            "retry": null,
+            "mockInput": {},
+            "isMocked": false,
+            "humanSecondsSaved": 0,
+            "timeout": 600,
+            "transitionMode": "FOLLOW_ALL",
+            "publishResultAs": "",
+            "runAsOrgId": "",
+            "with": null,
+            "securitySchema": {},
+            "action": {
+              "id": "@@@action_ref4@@@"
+            },
+            "next": [
+              {
+                "do": [
+                  "@@@workflow_task_id_ref5@@@"
+                ],
+                "id": "@@@transition_id_ref18@@@",
+                "publish": [],
+                "when": "{{ SUCCEEDED }}"
+              }
+            ],
+            "packOverrides": []
+          },
+          {
+            "id": "@@@workflow_task_id_ref18@@@",
+            "input": {
+              "url": "{{ TASKS.fetch_teams_activity_report.result.result.response.headers.location | d(TASKS.fetch_teams_activity_report.result.response.headers.location) }}",
+              "method": "GET",
+              "timeout": 30,
+              "require_2xx_status": true
+            },
+            "join": 0,
+            "retry": null,
+            "mockInput": {},
+            "isMocked": false,
+            "humanSecondsSaved": 0,
+            "timeout": 600,
+            "transitionMode": "FOLLOW_ALL",
+            "publishResultAs": "",
+            "runAsOrgId": "",
+            "with": null,
+            "securitySchema": {},
+            "action": {
+              "id": "@@@action_ref4@@@"
+            },
+            "next": [
+              {
+                "do": [
+                  "@@@workflow_task_id_ref7@@@"
+                ],
+                "id": "@@@transition_id_ref19@@@",
+                "publish": [],
+                "when": "{{ SUCCEEDED }}"
+              }
+            ],
+            "packOverrides": []
+          },
+          {
+            "id": "@@@workflow_task_id_ref19@@@",
+            "input": {
+              "template": {
+                "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Microsoft 365 User Utilization Report</title>\n  <style>\n    :root {\n      --bg: #f6f7f9;\n      --panel: #ffffff;\n      --text: #1f2937;\n      --muted: #6b7280;\n      --line: #d1d5db;\n      --line-soft: #e5e7eb;\n      --header: #eef2f7;\n      --good: #166534;\n      --good-bg: #dcfce7;\n      --warn: #92400e;\n      --warn-bg: #fef3c7;\n      --bad: #991b1b;\n      --bad-bg: #fee2e2;\n      --neutral-bg: #f3f4f6;\n    }\n\n    * { box-sizing: border-box; }\n\n    body {\n      margin: 0;\n      padding: 24px;\n      background: var(--bg);\n      color: var(--text);\n      font-family: Arial, Helvetica, sans-serif;\n      font-size: 14px;\n      line-height: 1.45;\n    }\n\n    .page {\n      max-width: 1400px;\n      margin: 0 auto;\n    }\n\n    header,\n    section,\n    .metric {\n      background: var(--panel);\n      border: 1px solid var(--line);\n      border-radius: 6px;\n    }\n\n    header {\n      padding: 24px;\n      margin-bottom: 16px;\n    }\n\n    h1,\n    h2,\n    h3,\n    p {\n      margin-top: 0;\n    }\n\n    h1 {\n      margin-bottom: 8px;\n      font-size: 28px;\n      line-height: 1.15;\n    }\n\n    h2 {\n      margin-bottom: 8px;\n      font-size: 20px;\n    }\n\n    h3 {\n      margin-bottom: 8px;\n      font-size: 16px;\n    }\n\n    .meta,\n    .muted {\n      color: var(--muted);\n    }\n\n    .meta {\n      display: flex;\n      flex-wrap: wrap;\n      gap: 10px;\n      margin-top: 12px;\n      font-size: 13px;\n    }\n\n    .metrics {\n      display: grid;\n      grid-template-columns: repeat(5, minmax(0, 1fr));\n      gap: 10px;\n      margin-bottom: 16px;\n    }\n\n    .metric {\n      padding: 14px;\n    }\n\n    .metric .label {\n      display: block;\n      color: var(--muted);\n      font-size: 12px;\n      font-weight: 700;\n      letter-spacing: .04em;\n      text-transform: uppercase;\n    }\n\n    .metric .value {\n      display: block;\n      margin-top: 6px;\n      font-size: 24px;\n      font-weight: 700;\n    }\n\n    section {\n      padding: 18px;\n      margin-bottom: 16px;\n    }\n\n    .section-note {\n      color: var(--muted);\n      margin-bottom: 14px;\n    }\n\n    .table-wrap {\n      overflow-x: auto;\n      border: 1px solid var(--line);\n      border-radius: 6px;\n    }\n\n    table {\n      width: 100%;\n      min-width: 960px;\n      border-collapse: collapse;\n      background: var(--panel);\n    }\n\n    .compact table,\n    table.compact {\n      min-width: 720px;\n    }\n\n    th,\n    td {\n      padding: 10px 12px;\n      border-bottom: 1px solid var(--line-soft);\n      text-align: left;\n      vertical-align: top;\n    }\n\n    th {\n      background: var(--header);\n      color: #374151;\n      font-size: 12px;\n      font-weight: 700;\n      letter-spacing: .04em;\n      text-transform: uppercase;\n      white-space: nowrap;\n    }\n\n    tr:last-child td {\n      border-bottom: 0;\n    }\n\n    .right {\n      text-align: right;\n      white-space: nowrap;\n    }\n\n    .nowrap {\n      white-space: nowrap;\n    }\n\n    .user-name {\n      font-weight: 700;\n    }\n\n    .subtle {\n      margin-top: 3px;\n      color: var(--muted);\n      font-size: 12px;\n      overflow-wrap: anywhere;\n    }\n\n    .chips {\n      display: flex;\n      flex-wrap: wrap;\n      gap: 5px;\n    }\n\n    .chip {\n      display: inline-flex;\n      align-items: center;\n      border-radius: 999px;\n      padding: 3px 8px;\n      background: var(--neutral-bg);\n      color: #374151;\n      font-size: 12px;\n      font-weight: 600;\n      white-space: nowrap;\n    }\n\n    .chip.good {\n      background: var(--good-bg);\n      color: var(--good);\n    }\n\n    .chip.warn {\n      background: var(--warn-bg);\n      color: var(--warn);\n    }\n\n    .chip.bad {\n      background: var(--bad-bg);\n      color: var(--bad);\n    }\n\n    .stack {\n      display: grid;\n      gap: 6px;\n    }\n\n    details {\n      border: 1px solid var(--line);\n      border-radius: 6px;\n      background: var(--panel);\n      margin-bottom: 10px;\n    }\n\n    summary {\n      cursor: pointer;\n      padding: 12px;\n      font-weight: 700;\n    }\n\n    .details-body {\n      border-top: 1px solid var(--line-soft);\n      padding: 12px;\n    }\n\n    .empty {\n      padding: 14px;\n      border: 1px dashed var(--line);\n      border-radius: 6px;\n      color: var(--muted);\n      background: #fafafa;\n    }\n\n    @media (max-width: 900px) {\n      body { padding: 12px; }\n      .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }\n    }\n\n    @media print {\n      body { background: #ffffff; padding: 0; }\n      header, section, .metric { break-inside: avoid; }\n    }\n  </style>\n</head>\n<body>\n{% set report = CTX.report_data | d('{}') | from_json_string %}\n{% set summary = report.summary | d({}) %}\n{% set pricing = report.pricing_summary | d({}) %}\n{% set workloads = report.workload_summary | d({}) %}\n{% set user_rows = report.user_rows | d([]) %}\n{% set license_rows = report.license_rows | d([]) %}\n{% set tenant_name = CTX.tenant_name | d(report.tenant_name | d('Tenant')) %}\n<div class=\"page\">\n  <header>\n    <h1>{{ tenant_name }} Microsoft 365 User Utilization</h1>\n    <p class=\"muted\">A review of assigned licenses, successful sign-in evidence, Microsoft 365 workload activity, and estimated license review opportunities.</p>\n    <div class=\"meta\">\n      <span>Report period: {{ report.report_period | d(CTX.report_period | d('D30')) }}</span>\n      <span>Stale threshold: {{ report.stale_days | d(CTX.stale_days | d(90)) }} days</span>\n      {% if report.generated_at %}<span>Generated: {{ report.generated_at }}</span>{% endif %}\n    </div>\n  </header>\n\n  <div class=\"metrics\">\n    <div class=\"metric\"><span class=\"label\">Total users</span><span class=\"value\">{{ summary.total_users | d(0) }}</span></div>\n    <div class=\"metric\"><span class=\"label\">Licensed</span><span class=\"value\">{{ summary.licensed_users | d(0) }}</span></div>\n    <div class=\"metric\"><span class=\"label\">Stale</span><span class=\"value\">{{ summary.stale_users | d(0) }}</span></div>\n    <div class=\"metric\"><span class=\"label\">Est. stale review / mo</span><span class=\"value\">${{ '%.2f'|format(pricing.stale_monthly_reclaim | d(0)) }}</span></div>\n    <div class=\"metric\"><span class=\"label\">Priced coverage</span><span class=\"value\">{{ pricing.priced_assignment_count | d(0) }}/{{ pricing.total_assignment_count | d(0) }}</span></div>\n  </div>\n\n  <section>\n    <h2>Important Notes</h2>\n    <ul>\n      {% for note in report.notes | d([]) %}<li>{{ note }}</li>{% endfor %}\n      <li>Cost estimates use matched public Microsoft list prices only. Unmatched, bundled, ambiguous, or unpriced SKUs are excluded from savings estimates.</li>\n      <li>Low or missing usage evidence is a review signal, not proof that a license can be removed. Validate business role, mailbox type, shared use, and approval before making changes.</li>\n    </ul>\n  </section>\n\n  <section>\n    <h2>Executive Snapshot</h2>\n    <p class=\"section-note\">Summary rows are intended to help prioritize review work. They should not be treated as automatic remediation instructions.</p>\n    <div class=\"table-wrap compact\">\n      <table class=\"compact\">\n        <thead>\n          <tr><th>Category</th><th class=\"right\">Users</th><th>Evidence</th><th class=\"right\">Estimated Monthly Review</th></tr>\n        </thead>\n        <tbody>\n          <tr>\n            <td>Licensed and active</td>\n            <td class=\"right\">{{ summary.active_licensed_users | d(summary.active_users | d(0)) }}</td>\n            <td>Recent sign-in or Microsoft 365 workload evidence.</td>\n            <td class=\"right\">$0.00</td>\n          </tr>\n          <tr>\n            <td>Licensed and stale</td>\n            <td class=\"right\">{{ summary.stale_users | d(0) }}</td>\n            <td>No successful sign-in within the configured stale threshold.</td>\n            <td class=\"right\">${{ '%.2f'|format(pricing.stale_monthly_reclaim | d(0)) }}</td>\n          </tr>\n          <tr>\n            <td>Licensed with no workload evidence</td>\n            <td class=\"right\">{{ summary.no_workload_users | d(0) }}</td>\n            <td>Licensed user with no workload usage surfaced in the report window.</td>\n            <td class=\"right\">${{ '%.2f'|format(pricing.no_workload_monthly_review | d(0)) }}</td>\n          </tr>\n          <tr>\n            <td>Licensed but low utilization</td>\n            <td class=\"right\">{{ summary.low_utilization_users | d(0) }}</td>\n            <td>Limited direct workload evidence in the current window.</td>\n            <td class=\"right\">${{ '%.2f'|format(pricing.low_monthly_review | d(0)) }}</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n  </section>\n\n  <section>\n    <h2>User Detail</h2>\n    <p class=\"section-note\">Current license assignment is shown in full. Workload columns show direct activity evidence from the selected report window.</p>\n    {% if user_rows | length > 0 %}\n    <div class=\"table-wrap\">\n      <table>\n        <thead>\n          <tr>\n            <th>User</th>\n            <th>Current Licenses</th>\n            <th class=\"right\">Est. Monthly Cost</th>\n            <th>Last Successful Sign-In</th>\n            <th>Sign-In</th>\n            <th>Email</th>\n            <th>Teams</th>\n            <th>OneDrive</th>\n            <th>SharePoint</th>\n            <th>Apps</th>\n          </tr>\n        </thead>\n        <tbody>\n        {% for row in user_rows | sort(attribute='estimated_monthly_cost', reverse=true) %}\n          <tr>\n            <td>\n              <div class=\"user-name\">{{ row.display_name }}</div>\n              <div class=\"subtle\">{{ row.user_principal_name }}</div>\n              {% if row.department %}<div class=\"subtle\">{{ row.department }}</div>{% endif %}\n            </td>\n            <td>\n              {% if row.license_names | d([]) | length > 0 %}\n              <div class=\"chips\">\n                {% for lic in row.license_names | sort %}\n                <span class=\"chip\">{{ lic }}</span>\n                {% endfor %}\n              </div>\n              {% else %}\n              <span class=\"chip\">Unlicensed</span>\n              {% endif %}\n            </td>\n            <td class=\"right\">\n              <strong>${{ '%.2f'|format(row.estimated_monthly_cost | d(0)) }}</strong>\n              {% if row.unpriced_licenses | d([]) | length > 0 %}<div class=\"subtle\">{{ row.unpriced_licenses | length }} unpriced SKU(s)</div>{% endif %}\n            </td>\n            <td class=\"nowrap\">{{ row.last_successful_signin | d('None recorded') }}</td>\n            <td>{% if row.recent_signin %}<span class=\"chip good\">Recent</span>{% elif row.stale %}<span class=\"chip bad\">Stale</span>{% else %}<span class=\"chip\">No</span>{% endif %}</td>\n            <td>{% if row.email_active %}<span class=\"chip good\">Yes</span>{% elif row.licensed %}<span class=\"chip\">No</span>{% else %}<span class=\"chip\">N/A</span>{% endif %}</td>\n            <td>{% if row.teams_active %}<span class=\"chip good\">Yes</span>{% elif row.licensed %}<span class=\"chip\">No</span>{% else %}<span class=\"chip\">N/A</span>{% endif %}</td>\n            <td>{% if row.onedrive_active %}<span class=\"chip good\">Yes</span>{% elif row.licensed %}<span class=\"chip\">No</span>{% else %}<span class=\"chip\">N/A</span>{% endif %}</td>\n            <td>{% if row.sharepoint_active %}<span class=\"chip good\">Yes</span>{% elif row.licensed %}<span class=\"chip\">No</span>{% else %}<span class=\"chip\">N/A</span>{% endif %}</td>\n            <td>{% if row.m365app_active %}<span class=\"chip good\">Yes</span>{% elif row.licensed %}<span class=\"chip\">No</span>{% else %}<span class=\"chip\">N/A</span>{% endif %}</td>\n          </tr>\n        {% endfor %}\n        </tbody>\n      </table>\n    </div>\n    {% else %}\n    <div class=\"empty\">No user baseline has been normalized yet.</div>\n    {% endif %}\n  </section>\n\n  <section>\n    <h2>Stale Licensed Users</h2>\n    <p class=\"section-note\">Enabled, licensed users with no successful sign-in inside the configured threshold.</p>\n    {% if report.stale_rows | d([]) | length > 0 %}\n    <div class=\"table-wrap compact\">\n      <table class=\"compact\">\n        <thead>\n          <tr><th>User</th><th>Current Licenses</th><th class=\"right\">Est. Monthly Cost</th><th>Last Successful Sign-In</th><th>Reason</th></tr>\n        </thead>\n        <tbody>\n        {% for row in user_rows if row.stale %}\n          <tr>\n            <td><div class=\"user-name\">{{ row.display_name }}</div><div class=\"subtle\">{{ row.user_principal_name }}</div></td>\n            <td><div class=\"chips\">{% for lic in row.license_names | d([]) | sort %}<span class=\"chip\">{{ lic }}</span>{% endfor %}</div></td>\n            <td class=\"right\">${{ '%.2f'|format(row.estimated_monthly_cost | d(0)) }}</td>\n            <td class=\"nowrap\">{{ row.last_successful_signin | d('None recorded') }}</td>\n            <td>No successful sign-in within {{ report.stale_days | d(90) }} days.</td>\n          </tr>\n        {% endfor %}\n        </tbody>\n      </table>\n    </div>\n    {% else %}\n    <div class=\"empty\">No stale users were identified in the current normalized dataset.</div>\n    {% endif %}\n  </section>\n\n  <section>\n    <h2>License Efficiency</h2>\n    {% if license_rows | length > 0 %}\n    {% for row in license_rows | sort(attribute='stale_monthly_cost', reverse=true) %}\n    <details {% if loop.first and row.stale_users | d([]) | length > 0 %}open{% endif %}>\n      <summary>{{ row.license_name }} - {{ row.assigned_users | d(0) }} assigned, {{ row.stale_users | d([]) | length }} stale, ${{ '%.2f'|format(row.stale_monthly_cost | d(0)) }}/mo review target</summary>\n      <div class=\"details-body\">\n        <p class=\"muted\">Monthly price: {% if row.monthly_price is not none %}${{ '%.2f'|format(row.monthly_price) }}{% else %}Unpriced{% endif %}. Source: {{ row.source | d('Not priced') }}.</p>\n        {% if row.stale_users | d([]) | length > 0 %}\n        <div class=\"table-wrap compact\">\n          <table class=\"compact\">\n            <thead><tr><th>Stale User</th><th>UPN</th><th>Last Successful Sign-In</th><th class=\"right\">Estimated Monthly Cost</th></tr></thead>\n            <tbody>\n            {% for stale_user in row.stale_users %}\n              <tr>\n                <td>{{ stale_user.display_name }}</td>\n                <td>{{ stale_user.user_principal_name }}</td>\n                <td>{{ stale_user.last_successful_signin | d('None recorded') }}</td>\n                <td class=\"right\">{% if stale_user.monthly_price is not none %}${{ '%.2f'|format(stale_user.monthly_price) }}{% else %}Unpriced{% endif %}</td>\n              </tr>\n            {% endfor %}\n            </tbody>\n          </table>\n        </div>\n        {% else %}\n        <div class=\"empty\">No stale users for this license.</div>\n        {% endif %}\n      </div>\n    </details>\n    {% endfor %}\n    {% else %}\n    <div class=\"empty\">No license assignments were normalized from the tenant baseline.</div>\n    {% endif %}\n  </section>\n\n  <section>\n    <h2>Workload Adoption</h2>\n    <div class=\"table-wrap compact\">\n      <table class=\"compact\">\n        <thead><tr><th>Workload</th><th class=\"right\">Users With Activity</th><th>Evidence Source</th></tr></thead>\n        <tbody>\n          <tr><td>Office 365 active</td><td class=\"right\">{{ workloads.office | d(0) }}</td><td>Microsoft 365 active user detail.</td></tr>\n          <tr><td>Email</td><td class=\"right\">{{ workloads.email | d(0) }}</td><td>Exchange or Outlook activity detected.</td></tr>\n          <tr><td>Teams</td><td class=\"right\">{{ workloads.teams | d(0) }}</td><td>Teams activity detected.</td></tr>\n          <tr><td>OneDrive</td><td class=\"right\">{{ workloads.onedrive | d(0) }}</td><td>OneDrive activity detected.</td></tr>\n          <tr><td>SharePoint</td><td class=\"right\">{{ workloads.sharepoint | d(0) }}</td><td>SharePoint activity detected.</td></tr>\n          <tr><td>M365 Apps</td><td class=\"right\">{{ workloads.m365app | d(0) }}</td><td>M365 Apps activity detected.</td></tr>\n        </tbody>\n      </table>\n    </div>\n  </section>\n\n  <section>\n    <h2>Recommendations</h2>\n    <p class=\"section-note\">This queue is driven by direct evidence: stale sign-in, no workload evidence, low utilization, or unlicensed accounts that still deserve review.</p>\n    {% if report.recommendation_rows | d([]) | length > 0 %}\n    <div class=\"table-wrap compact\">\n      <table class=\"compact\">\n        <thead><tr><th>User</th><th>Current Licenses</th><th class=\"right\">Est. Monthly Cost</th><th>Evidence</th><th>Suggested Action</th></tr></thead>\n        <tbody>\n        {% for row in user_rows if row.classification != 'Licensed and active' %}\n          <tr>\n            <td><div class=\"user-name\">{{ row.display_name }}</div><div class=\"subtle\">{{ row.user_principal_name }}</div></td>\n            <td><div class=\"chips\">{% for lic in row.license_names | d([]) | sort %}<span class=\"chip\">{{ lic }}</span>{% endfor %}</div></td>\n            <td class=\"right\">${{ '%.2f'|format(row.estimated_monthly_cost | d(0)) }}</td>\n            <td>\n              <div class=\"stack\">\n                {% if row.stale %}<span class=\"chip bad\">No successful sign-in inside {{ report.stale_days | d(90) }} days</span>{% endif %}\n                {% if row.licensed and row.workload_count == 0 %}<span class=\"chip warn\">No workload evidence in {{ report.report_period | d('D30') }}</span>{% endif %}\n                {% if row.classification == 'Licensed but low utilization' %}<span class=\"chip warn\">Only {{ row.workload_count }} workload(s) show activity</span>{% endif %}\n                {% if not row.licensed %}<span class=\"chip\">No current licenses assigned</span>{% endif %}\n                {% if row.unpriced_licenses | d([]) | length > 0 %}<span class=\"chip\">{{ row.unpriced_licenses | length }} unpriced SKU(s)</span>{% endif %}\n              </div>\n            </td>\n            <td>{{ row.recommendation }}</td>\n          </tr>\n        {% endfor %}\n        </tbody>\n      </table>\n    </div>\n    {% else %}\n    <div class=\"empty\">No recommendation rows were generated yet.</div>\n    {% endif %}\n  </section>\n</div>\n</body>\n</html>\n",
+                "name": "Microsoft 365 User Utilization Report - Community",
+                "language": "html",
+                "description": "Plain community-safe hosted report template",
+                "content_type": "message",
+                "template_id": "REPLACE_WITH_IMPORTED_TEMPLATE_ID"
+              },
+              "run_as_user": null,
+              "template_id": "REPLACE_WITH_IMPORTED_TEMPLATE_ID"
+            },
+            "join": 0,
+            "retry": null,
+            "mockInput": {},
+            "isMocked": false,
+            "humanSecondsSaved": 0,
+            "timeout": 600,
+            "transitionMode": "FOLLOW_ALL",
+            "publishResultAs": "",
+            "runAsOrgId": "",
+            "with": null,
+            "securitySchema": {},
+            "action": {
+              "id": "@@@action_ref5@@@"
+            },
+            "next": [
+              {
+                "do": [
+                  "@@@workflow_task_id_ref3@@@"
+                ],
+                "id": "@@@transition_id_ref20@@@",
+                "publish": [],
+                "when": "{{ SUCCEEDED }}"
+              }
+            ],
+            "packOverrides": []
+          },
+          {
+            "id": "@@@workflow_task_id_ref20@@@",
+            "input": {},
+            "join": 0,
+            "retry": null,
+            "mockInput": {},
+            "isMocked": false,
+            "humanSecondsSaved": 0,
+            "timeout": 600,
+            "transitionMode": "FOLLOW_ALL",
+            "publishResultAs": "",
+            "runAsOrgId": "",
+            "with": null,
+            "securitySchema": {},
+            "action": {
+              "id": "@@@action_ref1@@@"
+            },
+            "next": [
+              {
+                "do": [
+                  "@@@workflow_task_id_ref1@@@"
+                ],
+                "id": "@@@transition_id_ref21@@@",
+                "publish": [],
+                "when": "{{ SUCCEEDED }}"
+              }
+            ],
+            "packOverrides": []
+          },
+          {
+            "id": "@@@workflow_task_id_ref21@@@",
+            "input": {},
+            "join": 0,
+            "retry": null,
+            "mockInput": {},
+            "isMocked": false,
+            "humanSecondsSaved": 0,
+            "timeout": 600,
+            "transitionMode": "FOLLOW_ALL",
+            "publishResultAs": "",
+            "runAsOrgId": "",
+            "with": null,
+            "securitySchema": {},
+            "action": {
+              "id": "@@@action_ref1@@@"
+            },
+            "next": [
+              {
+                "do": [
+                  "@@@workflow_task_id_ref11@@@"
+                ],
+                "id": "@@@transition_id_ref22@@@",
+                "publish": [
+                  {
+                    "email_addresses": "{% if CTX.email_addresses is string %}{{ CTX.email_addresses.split(',') | map('trim') | reject('equalto', '') | list }}{% else %}{{ CTX.email_addresses | d(['admin@example.com']) }}{% endif %}"
+                  },
+                  {
+                    "tenant_name": "{{ CTX.tenant_name | d('Example Tenant') }}"
+                  },
+                  {
+                    "report_period": "{{ (CTX.report_period | d('D30')) | upper }}"
+                  },
+                  {
+                    "stale_days": "{{ CTX.stale_days | d('90') }}"
+                  },
+                  {
+                    "include_disabled": "{{ CTX.include_disabled | d(false) }}"
+                  },
+                  {
+                    "exclusion_patterns": "{% if CTX.exclusion_patterns is string %}{{ CTX.exclusion_patterns.split(',') | map('trim') | list }}{% else %}{{ CTX.exclusion_patterns | d(['svc', 'service', 'shared', 'breakglass', 'break-glass', 'backup', 'automation', 'noreply']) }}{% endif %}"
+                  },
+                  {
+                    "report_window_days": "{% set period = (CTX.report_period | d('D30')) | upper %}{% if period == 'D7' %}7{% elif period == 'D90' %}90{% elif period == 'D180' %}180{% else %}30{% endif %}"
+                  }
+                ],
+                "when": "{{ SUCCEEDED }}"
+              },
+              {
+                "do": [
+                  "@@@workflow_task_id_ref9@@@"
+                ],
+                "id": "@@@transition_id_ref23@@@",
+                "publish": [],
+                "when": "{{ SUCCEEDED }}"
+              },
+              {
+                "do": [
+                  "@@@workflow_task_id_ref6@@@"
+                ],
+                "id": "@@@transition_id_ref24@@@",
+                "publish": [],
+                "when": "{{ SUCCEEDED }}"
+              }
+            ],
+            "packOverrides": []
+          }
+        ],
+        "timeout": 28800,
+        "type": "STANDARD",
+        "varsSchema": {
+          "stale_days": {
+            "type": "string",
+            "default": "90",
+            "required": false,
+            "multiline": false
+          },
+          "tenant_name": {
+            "type": "string",
+            "default": "Example Tenant",
+            "required": false,
+            "multiline": false
+          },
+          "report_period": {
+            "type": "string",
+            "default": "D30",
+            "required": false,
+            "multiline": false
+          },
+          "include_disabled": {
+            "type": "boolean",
+            "default": false,
+            "required": false
+          },
+          "exclusion_patterns": {
+            "type": "array",
+            "default": "{{ ['svc', 'service', 'shared', 'breakglass', 'break-glass', 'backup', 'automation', 'noreply'] }}",
+            "required": false,
+            "multiline": false
+          }
+        }
+      },
+      "nonfunctional_fields": {
+        "description": "Community-safe Microsoft 365 user utilization snapshot. Collects Graph usage evidence, license assignment context, and estimated review opportunities without private branding.",
+        "name": "Microsoft 365 User Utilization Report - Community",
+        "tasks[0].description": "Workflow end",
+        "tasks[0].metadata": {},
+        "tasks[0].name": "END",
+        "tasks[0].next[0].from": null,
+        "tasks[0].next[0].label": "",
+        "tasks[0].next[0].left": null,
+        "tasks[0].next[0].orientation": "vertical",
+        "tasks[0].next[0].to": null,
+        "tasks[0].next[0].top": null,
+        "tasks[1].description": "Entry point",
+        "tasks[1].metadata": {},
+        "tasks[1].name": "START",
+        "tasks[1].next[0].from": null,
+        "tasks[1].next[0].label": "",
+        "tasks[1].next[0].left": null,
+        "tasks[1].next[0].orientation": null,
+        "tasks[1].next[0].to": null,
+        "tasks[1].next[0].top": null,
+        "tasks[1].next[1].from": null,
+        "tasks[1].next[1].label": "",
+        "tasks[1].next[1].left": null,
+        "tasks[1].next[1].orientation": "vertical",
+        "tasks[1].next[1].to": null,
+        "tasks[1].next[1].top": null,
+        "tasks[2].description": "Send hosted report link by email",
+        "tasks[2].metadata": {},
+        "tasks[2].name": "core_sendmail",
+        "tasks[2].next[0].from": null,
+        "tasks[2].next[0].label": "",
+        "tasks[2].next[0].left": null,
+        "tasks[2].next[0].orientation": "vertical",
+        "tasks[2].next[0].to": null,
+        "tasks[2].next[0].top": null,
+        "tasks[3].description": "Fetch Exchange email activity user detail CSV",
+        "tasks[3].metadata": {},
+        "tasks[3].name": "fetch_email_activity_report",
+        "tasks[3].next[0].from": null,
+        "tasks[3].next[0].label": "",
+        "tasks[3].next[0].left": null,
+        "tasks[3].next[0].orientation": "vertical",
+        "tasks[3].next[0].to": null,
+        "tasks[3].next[0].top": null,
+        "tasks[4].description": "Fetch Microsoft 365 app user detail CSV",
+        "tasks[4].metadata": {},
+        "tasks[4].name": "fetch_m365app_activity_report",
+        "tasks[4].next[0].from": null,
+        "tasks[4].next[0].label": "",
+        "tasks[4].next[0].left": null,
+        "tasks[4].next[0].orientation": "vertical",
+        "tasks[4].next[0].to": null,
+        "tasks[4].next[0].top": null,
+        "tasks[5].description": "Fetch Office 365 active user detail CSV",
+        "tasks[5].metadata": {},
+        "tasks[5].name": "fetch_office_activity_report",
+        "tasks[5].next[0].from": null,
+        "tasks[5].next[0].label": "",
+        "tasks[5].next[0].left": null,
+        "tasks[5].next[0].orientation": "vertical",
+        "tasks[5].next[0].to": null,
+        "tasks[5].next[0].top": null,
+        "tasks[6].description": "Fetch OneDrive activity user detail CSV",
+        "tasks[6].metadata": {},
+        "tasks[6].name": "fetch_onedrive_activity_report",
+        "tasks[6].next[0].from": null,
+        "tasks[6].next[0].label": "",
+        "tasks[6].next[0].left": null,
+        "tasks[6].next[0].orientation": "vertical",
+        "tasks[6].next[0].to": null,
+        "tasks[6].next[0].top": null,
+        "tasks[7].description": "Fetch SharePoint activity user detail CSV",
+        "tasks[7].metadata": {},
+        "tasks[7].name": "fetch_sharepoint_activity_report",
+        "tasks[7].next[0].from": null,
+        "tasks[7].next[0].label": "",
+        "tasks[7].next[0].left": null,
+        "tasks[7].next[0].orientation": "vertical",
+        "tasks[7].next[0].to": null,
+        "tasks[7].next[0].top": null,
+        "tasks[8].description": "Fetch tenant SKU catalog",
+        "tasks[8].metadata": {},
+        "tasks[8].name": "fetch_subscribed_skus",
+        "tasks[8].next[0].from": null,
+        "tasks[8].next[0].label": "",
+        "tasks[8].next[0].left": null,
+        "tasks[8].next[0].orientation": "vertical",
+        "tasks[8].next[0].to": null,
+        "tasks[8].next[0].top": null,
+        "tasks[9].description": "Fetch Teams user activity detail CSV",
+        "tasks[9].metadata": {},
+        "tasks[9].name": "fetch_teams_activity_report",
+        "tasks[9].next[0].from": null,
+        "tasks[9].next[0].label": "",
+        "tasks[9].next[0].left": null,
+        "tasks[9].next[0].orientation": "vertical",
+        "tasks[9].next[0].to": null,
+        "tasks[9].next[0].top": null,
+        "tasks[10].description": "Fetch tenant users with licenses and signInActivity",
+        "tasks[10].metadata": {},
+        "tasks[10].name": "fetch_users_baseline",
+        "tasks[10].next[0].from": null,
+        "tasks[10].next[0].label": "",
+        "tasks[10].next[0].left": null,
+        "tasks[10].next[0].orientation": "vertical",
+        "tasks[10].next[0].to": null,
+        "tasks[10].next[0].top": null,
+        "tasks[11].description": "Normalize Microsoft Graph data into scored user utilization rows",
+        "tasks[11].metadata": {},
+        "tasks[11].name": "normalize_report_data",
+        "tasks[11].next[0].from": null,
+        "tasks[11].next[0].label": "",
+        "tasks[11].next[0].left": null,
+        "tasks[11].next[0].orientation": "vertical",
+        "tasks[11].next[0].to": null,
+        "tasks[11].next[0].top": null,
+        "tasks[12].description": "Download CSV payload from the signed Microsoft report URL",
+        "tasks[12].metadata": {},
+        "tasks[12].name": "parse_email_activity_csv",
+        "tasks[12].next[0].from": null,
+        "tasks[12].next[0].label": "",
+        "tasks[12].next[0].left": null,
+        "tasks[12].next[0].orientation": "vertical",
+        "tasks[12].next[0].to": null,
+        "tasks[12].next[0].top": null,
+        "tasks[13].description": "Download CSV payload from the signed Microsoft report URL",
+        "tasks[13].metadata": {},
+        "tasks[13].name": "parse_m365app_activity_csv",
+        "tasks[13].next[0].from": null,
+        "tasks[13].next[0].label": "",
+        "tasks[13].next[0].left": null,
+        "tasks[13].next[0].orientation": "vertical",
+        "tasks[13].next[0].to": null,
+        "tasks[13].next[0].top": null,
+        "tasks[14].description": "Download CSV payload from the signed Microsoft report URL",
+        "tasks[14].metadata": {},
+        "tasks[14].name": "parse_office_activity_csv",
+        "tasks[14].next[0].from": null,
+        "tasks[14].next[0].label": "",
+        "tasks[14].next[0].left": null,
+        "tasks[14].next[0].orientation": "vertical",
+        "tasks[14].next[0].to": null,
+        "tasks[14].next[0].top": null,
+        "tasks[15].description": "Download CSV payload from the signed Microsoft report URL",
+        "tasks[15].metadata": {},
+        "tasks[15].name": "parse_onedrive_activity_csv",
+        "tasks[15].next[0].from": null,
+        "tasks[15].next[0].label": "",
+        "tasks[15].next[0].left": null,
+        "tasks[15].next[0].orientation": "vertical",
+        "tasks[15].next[0].to": null,
+        "tasks[15].next[0].top": null,
+        "tasks[16].description": "Download CSV payload from the signed Microsoft report URL",
+        "tasks[16].metadata": {},
+        "tasks[16].name": "parse_sharepoint_activity_csv",
+        "tasks[16].next[0].from": null,
+        "tasks[16].next[0].label": "",
+        "tasks[16].next[0].left": null,
+        "tasks[16].next[0].orientation": "vertical",
+        "tasks[16].next[0].to": null,
+        "tasks[16].next[0].top": null,
+        "tasks[17].description": "Download CSV payload from the signed Microsoft report URL",
+        "tasks[17].metadata": {},
+        "tasks[17].name": "parse_teams_activity_csv",
+        "tasks[17].next[0].from": null,
+        "tasks[17].next[0].label": "",
+        "tasks[17].next[0].left": null,
+        "tasks[17].next[0].orientation": "vertical",
+        "tasks[17].next[0].to": null,
+        "tasks[17].next[0].top": null,
+        "tasks[18].description": "Update the hosted M365 utilization report template directly",
+        "tasks[18].metadata": {},
+        "tasks[18].name": "rewst_update_template_direct",
+        "tasks[18].next[0].from": null,
+        "tasks[18].next[0].label": "",
+        "tasks[18].next[0].left": null,
+        "tasks[18].next[0].orientation": "vertical",
+        "tasks[18].next[0].to": null,
+        "tasks[18].next[0].top": null,
+        "tasks[19].description": "Serve hosted report without rerunning data collection",
+        "tasks[19].metadata": {},
+        "tasks[19].name": "run_from_webhook",
+        "tasks[19].next[0].from": null,
+        "tasks[19].next[0].label": "",
+        "tasks[19].next[0].left": null,
+        "tasks[19].next[0].orientation": "vertical",
+        "tasks[19].next[0].to": null,
+        "tasks[19].next[0].top": null,
+        "tasks[20].description": "Set community report defaults",
+        "tasks[20].metadata": {},
+        "tasks[20].name": "set_values",
+        "tasks[20].next[0].from": null,
+        "tasks[20].next[0].label": "",
+        "tasks[20].next[0].left": null,
+        "tasks[20].next[0].orientation": "vertical",
+        "tasks[20].next[0].to": null,
+        "tasks[20].next[0].top": null,
+        "tasks[20].next[1].from": null,
+        "tasks[20].next[1].label": "",
+        "tasks[20].next[1].left": null,
+        "tasks[20].next[1].orientation": "vertical",
+        "tasks[20].next[1].to": null,
+        "tasks[20].next[1].top": null,
+        "tasks[20].next[2].from": null,
+        "tasks[20].next[2].label": "",
+        "tasks[20].next[2].left": null,
+        "tasks[20].next[2].orientation": "vertical",
+        "tasks[20].next[2].to": null,
+        "tasks[20].next[2].top": null,
+        "varsSchema.exclusion_patterns.description": "UPN substrings to exclude from scoring.",
+        "varsSchema.exclusion_patterns.label": "Excluded User Patterns",
+        "varsSchema.include_disabled.description": "Reserved for a later iteration; current scoring emphasizes enabled accounts.",
+        "varsSchema.include_disabled.label": "Include Disabled Users",
+        "varsSchema.report_period.description": "Microsoft usage report period. Recommended values: D7, D30, D90, D180.",
+        "varsSchema.report_period.label": "Report Period",
+        "varsSchema.stale_days.description": "Days without a successful sign-in before a user is considered stale.",
+        "varsSchema.stale_days.label": "Stale Threshold Days",
+        "varsSchema.tenant_name.description": "Display name for the report header.",
+        "varsSchema.tenant_name.label": "Tenant Name"
+      },
+      "references": {
+        "workflow_task_id_ref11": {
+          "kind": "string",
+          "type": "workflow_task_id",
+          "src_key_hash": "BXXzNUVFZJZs99PpZMazRBspf2qWQxj1cm6oMzKYmqru",
+          "content_hash": "DiG7uQhB5pMjVNqTokvRs7a8zBAPaZpq1fmiHg94iVeC",
+          "locations": [
+            "tasks[10].id",
+            "tasks[20].next[0].do[0]"
+          ]
+        },
+        "workflow_task_id_ref1": {
+          "kind": "string",
+          "type": "workflow_task_id",
+          "src_key_hash": "24oVVsGLMukPFMsm289fpdHSRKyWEVxvsaPfLKswZsUr",
+          "content_hash": "A1qRogefqQkpZCjjm2CrCmP524mnNo8jpCPw6L3phJdo",
+          "locations": [
+            "tasks[0].id",
+            "tasks[2].next[0].do[0]",
+            "tasks[19].next[0].do[0]"
+          ]
+        },
+        "action_ref5": {
+          "kind": "string",
+          "type": "action",
+          "src_key_hash": "4pX4tW7kDzGhjgpyZZM5mUxdAV9B7Z7FNaszTgeum9Ka",
+          "content_hash": "CQ7ohpNTTHcoK2TS4yHmDMtaPqNf3voUoEK7TKQhw6u6",
+          "locations": [
+            "tasks[18].action.id"
+          ]
+        },
+        "transition_id_ref22": {
+          "kind": "string",
+          "type": "transition_id",
+          "src_key_hash": "9iTpao4DY5Gtcxfj7mmSLwrvDhoxPbsguYKaC8HiSQL7",
+          "content_hash": "3XU3AZHPRHECjCXCiQzngs2TCsZpba7mBkMrKA6UqJ84",
+          "locations": [
+            "tasks[20].next[0].id"
+          ]
+        },
+        "transition_id_ref13": {
+          "kind": "string",
+          "type": "transition_id",
+          "src_key_hash": "Bc5jzXcmaJKC5TH4ArcYUo4uYxR2dnNZVMDHzVA1EmN",
+          "content_hash": "4p45axxm3mtC41MpKjrbBxEa345TXAUb9iSrjWCw2ouW",
+          "locations": [
+            "tasks[11].next[0].id"
+          ]
+        },
+        "workflow_task_id_ref10": {
+          "kind": "string",
+          "type": "workflow_task_id",
+          "src_key_hash": "DfRAuUcHkTcpmhaQdCKH4FrFYd6LBBpdFwmENuPnmBU6",
+          "content_hash": "9GUXQphxGfAUd1PSrhEjN5k3uc35PVojdLLrwoM5jurL",
+          "locations": [
+            "tasks[9].id",
+            "tasks[12].next[0].do[0]"
+          ]
+        },
+        "action_ref1": {
+          "kind": "string",
+          "type": "action",
+          "src_key_hash": "qCZapmSYp7JNjpLXM3NvrfjUqDprKsMUttiyXPzMMwi",
+          "content_hash": "CdPL6KHuhM7mBvTHi4QnQbxCitnoxuRrq1BfHNnQYzKB",
+          "locations": [
+            "tasks[0].action.id",
+            "tasks[1].action.id",
+            "tasks[11].action.id",
+            "tasks[19].action.id",
+            "tasks[20].action.id"
+          ]
+        },
+        "workflow_task_id_ref17": {
+          "kind": "string",
+          "type": "workflow_task_id",
+          "src_key_hash": "GoRZWSNjkj8dRmsV4tb8vNey7RwzwvoXqpKdack8vbX3",
+          "content_hash": "9Uy8awbJWP7pZx8fggKkotgEaP89xyuJ42M99GbrBWv9",
+          "locations": [
+            "tasks[16].id",
+            "tasks[7].next[0].do[0]"
+          ]
+        },
+        "workflow_task_id_ref2": {
+          "kind": "string",
+          "type": "workflow_task_id",
+          "src_key_hash": "3ZfmmDPRkVrAkWdsmeFbDPf8yjhfBBqZGLDPQcZUoJ6H",
+          "content_hash": "op1PbdZToF4wMJXUpzsuzkyxvWuCdECxUVXgxhgDVPn",
+          "locations": [
+            "tasks[1].id"
+          ]
+        },
+        "action_ref2": {
+          "kind": "string",
+          "type": "action",
+          "src_key_hash": "AFW5X2tcLZDDqB8CwErB1jY6EMeuyH6rtX4pvLfgLQbh",
+          "content_hash": "DcoQjYdQYKa7t5hHgDqssUN6t7ryHHkZZPfezpoQ9z5s",
+          "locations": [
+            "tasks[2].action.id"
+          ]
+        },
+        "transition_id_ref4": {
+          "kind": "string",
+          "type": "transition_id",
+          "src_key_hash": "FTt14dxFKU5FLmAoKfnLd8q97nFGzFXa6HwwBLbYAZV6",
+          "content_hash": "Y74eSEvWQ57J3VG1ryo2QMYK3eZgRo25awPUeeaJDoh",
+          "locations": [
+            "tasks[2].next[0].id"
+          ]
+        },
+        "transition_id_ref9": {
+          "kind": "string",
+          "type": "transition_id",
+          "src_key_hash": "HF3j29T7UH8Zj1PZHEwfZwRK9K87wpvfPbKvVRoMvZUH",
+          "content_hash": "5ytpA3WXYxbptRFHwDhPYKUbDpFHpM74L6FwXWefv6Fz",
+          "locations": [
+            "tasks[7].next[0].id"
+          ]
+        },
+        "workflow_task_id_ref7": {
+          "kind": "string",
+          "type": "workflow_task_id",
+          "src_key_hash": "DPAFW6RHi8v6s3av54njtoLCkfW2yMXYXGHVZft9kD8E",
+          "content_hash": "GsbtAdxsQSCGnZy9Fo4XmmFL5CzAwxbkT5dWkfAijvp6",
+          "locations": [
+            "tasks[6].id",
+            "tasks[17].next[0].do[0]"
+          ]
+        },
+        "workflow_task_id_ref9": {
+          "kind": "string",
+          "type": "workflow_task_id",
+          "src_key_hash": "6MejEAJRAtSSWAc8FApzjd135tafkeEryeyiQFXcfqgh",
+          "content_hash": "Fefurw8XNUxEk9zSvxVLypws9xiNCDdEhaUT2RSDrdnT",
+          "locations": [
+            "tasks[8].id",
+            "tasks[20].next[1].do[0]"
+          ]
+        },
+        "transition_id_ref18": {
+          "kind": "string",
+          "type": "transition_id",
+          "src_key_hash": "FQnVEmh7B83LRzem3YS5V6HMLXtKvnUJKzqzQ1aS7QvH",
+          "content_hash": "9XXZgEHMrJHfJ6pqrNDujKxd2P7YtiAUaZ1bH8WkKCR",
+          "locations": [
+            "tasks[16].next[0].id"
+          ]
+        },
+        "workflow_task_id_ref16": {
+          "kind": "string",
+          "type": "workflow_task_id",
+          "src_key_hash": "BPfrmLcpVwf6fiBs1crbdXfZGzDNibmFWApxC9s76mTJ",
+          "content_hash": "Hi1WgqrVwPv4ccx1HGw6YzjGXChWZ85JfRSfaX5GYyaN",
+          "locations": [
+            "tasks[15].id",
+            "tasks[6].next[0].do[0]"
+          ]
+        },
+        "transition_id_ref8": {
+          "kind": "string",
+          "type": "transition_id",
+          "src_key_hash": "4wBC1aUwzDUgX1qd1T7ND5euouPyGjMdmaJLG3NsZqg6",
+          "content_hash": "EXFbYa93X5GxrD5HVQ3vWzrFqgax5dFdHfevr2AsrM1i",
+          "locations": [
+            "tasks[6].next[0].id"
+          ]
+        },
+        "action_ref4": {
+          "kind": "string",
+          "type": "action",
+          "src_key_hash": "GnUSfrR3daxQGJrn3HCammBLTAYSzwGqXZVPjh9s32kL",
+          "content_hash": "FMu3hsNV7SdbaFHCpQXe4YsxtfRZHq3LfQ8Ej6uv322w",
+          "locations": [
+            "tasks[12].action.id",
+            "tasks[13].action.id",
+            "tasks[14].action.id",
+            "tasks[15].action.id",
+            "tasks[16].action.id",
+            "tasks[17].action.id"
+          ]
+        },
+        "workflow_task_id_ref12": {
+          "kind": "string",
+          "type": "workflow_task_id",
+          "src_key_hash": "CwvAGvVWMHDvNPbGqn9nerRXjRMH9bLhpgEBjzHzPinJ",
+          "content_hash": "9DqB9jfvLJZGGBBzgjomWph7EzTrLt3VSsaTFUPSw3r",
+          "locations": [
+            "tasks[11].id",
+            "tasks[8].next[0].do[0]",
+            "tasks[10].next[0].do[0]",
+            "tasks[13].next[0].do[0]"
+          ]
+        },
+        "transition_id_ref21": {
+          "kind": "string",
+          "type": "transition_id",
+          "src_key_hash": "4MmWY7GW2R6TB1Bi3Ytt5yatcaN5LRJ8YpNVcJkCJJq5",
+          "content_hash": "BUxLJ3xjoxGA5QAttZManK4cj6WASusf8thj6u7sEzir",
+          "locations": [
+            "tasks[19].next[0].id"
+          ]
+        },
+        "transition_id_ref11": {
+          "kind": "string",
+          "type": "transition_id",
+          "src_key_hash": "2nCizvEuoigFmtBq1TSBKHk1J6VedqeLLHFwqEQ5dMQo",
+          "content_hash": "4jewmRcjP38jGXS5ATwYY7L7GB5SpbbrjGKT3jE3soix",
+          "locations": [
+            "tasks[9].next[0].id"
+          ]
+        },
+        "workflow_task_id_ref21": {
+          "kind": "string",
+          "type": "workflow_task_id",
+          "src_key_hash": "EWrYxw5w7BNKk1ygKugUTD1AXBm4DNWNNwrthQSaZpGn",
+          "content_hash": "6TV7hobYSKrMpZnoRE4K6oZNEsv9E9HMZUMMq3W3ioS1",
+          "locations": [
+            "tasks[20].id",
+            "tasks[1].next[1].do[0]"
+          ]
+        },
+        "workflow_task_id_ref13": {
+          "kind": "string",
+          "type": "workflow_task_id",
+          "src_key_hash": "GMKL87i8WA8dK2L4bmSvPsN194pp4iRJEFTxZ6FwKv3K",
+          "content_hash": "8FQixQwUSXAmc4JGDwUGWiRbMszu8R1vm7uWp8iJsjwG",
+          "locations": [
+            "tasks[12].id",
+            "tasks[3].next[0].do[0]"
+          ]
+        },
+        "workflow_task_id_ref18": {
+          "kind": "string",
+          "type": "workflow_task_id",
+          "src_key_hash": "NrZ5trimjCAB7nSwHAQ8veJ1wjiqgzdCD2hL25SH1U7",
+          "content_hash": "5pk7XX2mxsR1aUnqTJYpqyEEypxxpEY8NyeEpoCdeU5d",
+          "locations": [
+            "tasks[17].id",
+            "tasks[9].next[0].do[0]"
+          ]
+        },
+        "transition_id_ref5": {
+          "kind": "string",
+          "type": "transition_id",
+          "src_key_hash": "9bUoaGqCRnAiqxiyvoPWjbG2wtjEkn5uQKyhhqARD1if",
+          "content_hash": "7wP389bMu7iPvtc7UXDKDqxWzUidSdnr6uxjGyRRhjxv",
+          "locations": [
+            "tasks[3].next[0].id"
+          ]
+        },
+        "transition_id_ref19": {
+          "kind": "string",
+          "type": "transition_id",
+          "src_key_hash": "D8TUj1NNEJqAnQ8irFsbiCK6uDwTw96oHQkU7wvQoJqq",
+          "content_hash": "4FnEk6M6gDjsy5cSXMQAT4rSZw6NPHLs1ToV1AfToMwS",
+          "locations": [
+            "tasks[17].next[0].id"
+          ]
+        },
+        "transition_id_ref15": {
+          "kind": "string",
+          "type": "transition_id",
+          "src_key_hash": "41XwusqpeABTFLXV2AvXdoLA6YS64jq7d9eVgdTfcM3k",
+          "content_hash": "3ZfKP9qHPP3pqWXbNgwGFdyMn7r9byaqxT4srwPM6ZCh",
+          "locations": [
+            "tasks[13].next[0].id"
+          ]
+        },
+        "workflow_task_id_ref14": {
+          "kind": "string",
+          "type": "workflow_task_id",
+          "src_key_hash": "7xqaPJcwbnXJHUCK5QJMe1CK8c8LqEZaNj8sVJipFtEB",
+          "content_hash": "7vQM88EChQ7XtVV4ny1xKb87mjPnPsHPuKb2F92oB6qV",
+          "locations": [
+            "tasks[13].id",
+            "tasks[4].next[0].do[0]"
+          ]
+        },
+        "workflow_task_id_ref15": {
+          "kind": "string",
+          "type": "workflow_task_id",
+          "src_key_hash": "4aJd8wsMNEhPGok8NoesZq6ww7gasKWSJuHJWxKwbSih",
+          "content_hash": "3ruifDKifjwG2U8haxyHvv1DqKgeHyxuogm2YEP1e45W",
+          "locations": [
+            "tasks[14].id",
+            "tasks[5].next[0].do[0]"
+          ]
+        },
+        "workflow_task_id_ref3": {
+          "kind": "string",
+          "type": "workflow_task_id",
+          "src_key_hash": "A14eAEc4C1qCzHpLEhh1deQmbMgSzZnERveuPQWrH7YQ",
+          "content_hash": "6TXtyt1JHUd6YvSHGJMRv87iQnPeZ5Yjzq12jnTiMTR2",
+          "locations": [
+            "tasks[2].id",
+            "tasks[18].next[0].do[0]"
+          ]
+        },
+        "transition_id_ref12": {
+          "kind": "string",
+          "type": "transition_id",
+          "src_key_hash": "6iC79e8vV3v6m3u68B9KVfvBK9hB4nyqM153KfvskKqe",
+          "content_hash": "EVTQaJqUfaNayLxGoAJX75RSGNv2p3MkAqfXknSA4uuo",
+          "locations": [
+            "tasks[10].next[0].id"
+          ]
+        },
+        "transition_id_ref7": {
+          "kind": "string",
+          "type": "transition_id",
+          "src_key_hash": "ADWoH5qQcUqRM3GX2cqJVoG4CBdSU9fdtVxo3a8ksbcg",
+          "content_hash": "5prmdEjfgaSgHBAFAWBdpN9Pm79D1YhwWQectneQLgqi",
+          "locations": [
+            "tasks[5].next[0].id"
+          ]
+        },
+        "transition_id_ref24": {
+          "kind": "string",
+          "type": "transition_id",
+          "src_key_hash": "ALVJxtupmB9nAPch29Bkd1XouqU9LALWe9QM8FAbT2D6",
+          "content_hash": "4e7aM73QY3jcJGf5TPKdQhcwg4WU26oNcmG2ejYLvqEF",
+          "locations": [
+            "tasks[20].next[2].id"
+          ]
+        },
+        "workflow_task_id_ref20": {
+          "kind": "string",
+          "type": "workflow_task_id",
+          "src_key_hash": "CQYZRse1EVV8wxnV2kwbgwrTv8F3xKCWrBZWg5dpGZjq",
+          "content_hash": "D9KKZ21qaoCwtX41G6C2b2spv6y42LiP8JDjuGuVvpkT",
+          "locations": [
+            "tasks[19].id",
+            "tasks[1].next[0].do[0]"
+          ]
+        },
+        "transition_id_ref10": {
+          "kind": "string",
+          "type": "transition_id",
+          "src_key_hash": "6aMm8rwUA5qDPcb7nesaYNZzTLKzDZNiqQuzSk64ftFz",
+          "content_hash": "5dWmTFjmrkqRVgKm8Kb7vWFcRrXzpDe7fFq9EF4vnen6",
+          "locations": [
+            "tasks[8].next[0].id"
+          ]
+        },
+        "workflow_task_id_ref5": {
+          "kind": "string",
+          "type": "workflow_task_id",
+          "src_key_hash": "FgBzZuExBnP5KJDjKUaGkBV1A5CyhQZfQNLMR2o1TbLU",
+          "content_hash": "4TfW4nAUpQfJPUh6atxn3GEJLVrUuRwv6y3HqvEJCFDv",
+          "locations": [
+            "tasks[4].id",
+            "tasks[16].next[0].do[0]"
+          ]
+        },
+        "workflow_task_id_ref4": {
+          "kind": "string",
+          "type": "workflow_task_id",
+          "src_key_hash": "5P5L7j8fnS2UNib8DfeRV5oCYoAgU4RcB2cadyLWRmpm",
+          "content_hash": "BS625JWxXctncsgTLfNxQHpLQ1WYgJjGTVnYUu9LkZ92",
+          "locations": [
+            "tasks[3].id",
+            "tasks[14].next[0].do[0]"
+          ]
+        },
+        "transition_id_ref23": {
+          "kind": "string",
+          "type": "transition_id",
+          "src_key_hash": "HajyHND5Hptj4VL88XYHXCLVjK8hTMMjv6DwpA3M4Qcq",
+          "content_hash": "CmMiE3wUHavh6Y61Ez8y5JtysEPFPGgaNw2E9sMeziA",
+          "locations": [
+            "tasks[20].next[1].id"
+          ]
+        },
+        "transition_id_ref14": {
+          "kind": "string",
+          "type": "transition_id",
+          "src_key_hash": "5xRBwUpRMjwkqCjhRLJpASjuBvaiP1PzA6SvULisYMyx",
+          "content_hash": "6a5NbjHCbUiSwR8YWfhxucek1WVLm6hPjCu9gVhGniTB",
+          "locations": [
+            "tasks[12].next[0].id"
+          ]
+        },
+        "transition_id_ref3": {
+          "kind": "string",
+          "type": "transition_id",
+          "src_key_hash": "LM43y7QFP9g7GREYecoZijUaV98FdanPLHXWyCMRNpp",
+          "content_hash": "65yhqzW4URpoWwshESneGkiiz3uorfrjvUF2CrvsVfZZ",
+          "locations": [
+            "tasks[1].next[1].id"
+          ]
+        },
+        "action_ref3": {
+          "kind": "string",
+          "type": "action",
+          "src_key_hash": "FHsetLfZTJGxF7wrt1gF7in2BDDB3URbfSkKyzzdbstV",
+          "content_hash": "23N3ubJaPa6X5iBRydHACFjBkPCx3ojoiFwyDcNZB5a1",
+          "locations": [
+            "tasks[3].action.id",
+            "tasks[4].action.id",
+            "tasks[5].action.id",
+            "tasks[6].action.id",
+            "tasks[7].action.id",
+            "tasks[8].action.id",
+            "tasks[9].action.id",
+            "tasks[10].action.id"
+          ]
+        },
+        "transition_id_ref1": {
+          "kind": "string",
+          "type": "transition_id",
+          "src_key_hash": "Fv8Tv5kt6BxQeSAmdH2JxiFPXX9bPnVK4ANdRC2yXnPE",
+          "content_hash": "3gsuwfoqDP5uMTUfG1uHXpv7fbVgvdfjXixq8aDJm7Ec",
+          "locations": [
+            "tasks[0].next[0].id"
+          ]
+        },
+        "transition_id_ref2": {
+          "kind": "string",
+          "type": "transition_id",
+          "src_key_hash": "E7EW68yMPW2FJ8hNKPuHgM5AwLu2hneTW44WFWoxTCCT",
+          "content_hash": "FSutHNg3tgzpJcVSvUDKxzkjwUX6uQMMtm4vDss3qPJk",
+          "locations": [
+            "tasks[1].next[0].id"
+          ]
+        },
+        "transition_id_ref16": {
+          "kind": "string",
+          "type": "transition_id",
+          "src_key_hash": "5rDx3auDR76zC5j9JauG3bpqrDVRfqXRFgpyTP1jLbei",
+          "content_hash": "HTBFA2nwWXxMaLWkYRbX64XGJEfdkkAPUwwoJwbS2RSw",
+          "locations": [
+            "tasks[14].next[0].id"
+          ]
+        },
+        "workflow_task_id_ref8": {
+          "kind": "string",
+          "type": "workflow_task_id",
+          "src_key_hash": "Dr5v4xoGXLUN14wL3Zp8WpcmUsdU1SeefF9vEokWs9pc",
+          "content_hash": "PetsukZjPph53UZQX9rTCrRufefCGUEjWba5B9SBGNB",
+          "locations": [
+            "tasks[7].id",
+            "tasks[15].next[0].do[0]"
+          ]
+        },
+        "transition_id_ref6": {
+          "kind": "string",
+          "type": "transition_id",
+          "src_key_hash": "Bsq3Y5Y8JKD1iGjXFaabzvVtikPbnH85eRw8w5pvyF3M",
+          "content_hash": "GQUbbwNb2sWSFCajC8zSttAxZ4WQ3pmWqc4vRNU2Fatv",
+          "locations": [
+            "tasks[4].next[0].id"
+          ]
+        },
+        "workflow_task_id_ref6": {
+          "kind": "string",
+          "type": "workflow_task_id",
+          "src_key_hash": "7NNVzWtxCuYS21Mxrb6NsQvyhCwXGS6dEz6Gf3VXa7FA",
+          "content_hash": "AAmEvqrfRtZ4V9XpEDU2wMTS5RKxWwngC7tdumki75v4",
+          "locations": [
+            "tasks[5].id",
+            "tasks[20].next[2].do[0]"
+          ]
+        },
+        "transition_id_ref20": {
+          "kind": "string",
+          "type": "transition_id",
+          "src_key_hash": "9GjwKZzEZaQSebusQA26CC7C7xcmbz8BvajGnct3mZwp",
+          "content_hash": "66HAsoqbiEfALG9Bs5nMnbeoKFpXYaJtWAugbz2T45CB",
+          "locations": [
+            "tasks[18].next[0].id"
+          ]
+        },
+        "workflow_task_id_ref19": {
+          "kind": "string",
+          "type": "workflow_task_id",
+          "src_key_hash": "CU4qRvySutyVbSF9oyWtTnxz9UHHz1jfabAKEXj3LtSa",
+          "content_hash": "Dxc7TZoRHhYsCjyfehdJEDG8FDguu3SnCcJJ3Q5vBm5N",
+          "locations": [
+            "tasks[18].id",
+            "tasks[11].next[0].do[0]"
+          ]
+        },
+        "transition_id_ref17": {
+          "kind": "string",
+          "type": "transition_id",
+          "src_key_hash": "Hwbb1gy6RDsSxBucvykmwEbd44gH6Qwt8kELfhuzGcPP",
+          "content_hash": "FBDgKjoUeRa5rdf9fW9GpLAmS8s5wxZEsEGdCVWT5hYw",
+          "locations": [
+            "tasks[15].next[0].id"
+          ]
+        }
+      },
+      "dependencies": [
+        "workflow_task_id:NrZ5trimjCAB7nSwHAQ8veJ1wjiqgzdCD2hL25SH1U7",
+        "transition_id:4MmWY7GW2R6TB1Bi3Ytt5yatcaN5LRJ8YpNVcJkCJJq5",
+        "transition_id:Hwbb1gy6RDsSxBucvykmwEbd44gH6Qwt8kELfhuzGcPP",
+        "action:4pX4tW7kDzGhjgpyZZM5mUxdAV9B7Z7FNaszTgeum9Ka",
+        "workflow_task_id:DfRAuUcHkTcpmhaQdCKH4FrFYd6LBBpdFwmENuPnmBU6",
+        "workflow_task_id:GMKL87i8WA8dK2L4bmSvPsN194pp4iRJEFTxZ6FwKv3K",
+        "transition_id:41XwusqpeABTFLXV2AvXdoLA6YS64jq7d9eVgdTfcM3k",
+        "action:GnUSfrR3daxQGJrn3HCammBLTAYSzwGqXZVPjh9s32kL",
+        "workflow_task_id:5P5L7j8fnS2UNib8DfeRV5oCYoAgU4RcB2cadyLWRmpm",
+        "transition_id:9bUoaGqCRnAiqxiyvoPWjbG2wtjEkn5uQKyhhqARD1if",
+        "action:AFW5X2tcLZDDqB8CwErB1jY6EMeuyH6rtX4pvLfgLQbh",
+        "transition_id:5xRBwUpRMjwkqCjhRLJpASjuBvaiP1PzA6SvULisYMyx",
+        "transition_id:FQnVEmh7B83LRzem3YS5V6HMLXtKvnUJKzqzQ1aS7QvH",
+        "transition_id:2nCizvEuoigFmtBq1TSBKHk1J6VedqeLLHFwqEQ5dMQo",
+        "workflow_task_id:EWrYxw5w7BNKk1ygKugUTD1AXBm4DNWNNwrthQSaZpGn",
+        "workflow_task_id:FgBzZuExBnP5KJDjKUaGkBV1A5CyhQZfQNLMR2o1TbLU",
+        "transition_id:LM43y7QFP9g7GREYecoZijUaV98FdanPLHXWyCMRNpp",
+        "workflow_task_id:4aJd8wsMNEhPGok8NoesZq6ww7gasKWSJuHJWxKwbSih",
+        "transition_id:4wBC1aUwzDUgX1qd1T7ND5euouPyGjMdmaJLG3NsZqg6",
+        "workflow_task_id:CU4qRvySutyVbSF9oyWtTnxz9UHHz1jfabAKEXj3LtSa",
+        "transition_id:6iC79e8vV3v6m3u68B9KVfvBK9hB4nyqM153KfvskKqe",
+        "workflow_task_id:Dr5v4xoGXLUN14wL3Zp8WpcmUsdU1SeefF9vEokWs9pc",
+        "action:FHsetLfZTJGxF7wrt1gF7in2BDDB3URbfSkKyzzdbstV",
+        "workflow_task_id:7xqaPJcwbnXJHUCK5QJMe1CK8c8LqEZaNj8sVJipFtEB",
+        "transition_id:HF3j29T7UH8Zj1PZHEwfZwRK9K87wpvfPbKvVRoMvZUH",
+        "workflow_task_id:6MejEAJRAtSSWAc8FApzjd135tafkeEryeyiQFXcfqgh",
+        "workflow_task_id:GoRZWSNjkj8dRmsV4tb8vNey7RwzwvoXqpKdack8vbX3",
+        "transition_id:9iTpao4DY5Gtcxfj7mmSLwrvDhoxPbsguYKaC8HiSQL7",
+        "transition_id:FTt14dxFKU5FLmAoKfnLd8q97nFGzFXa6HwwBLbYAZV6",
+        "workflow_task_id:CwvAGvVWMHDvNPbGqn9nerRXjRMH9bLhpgEBjzHzPinJ",
+        "workflow_task_id:CQYZRse1EVV8wxnV2kwbgwrTv8F3xKCWrBZWg5dpGZjq",
+        "transition_id:6aMm8rwUA5qDPcb7nesaYNZzTLKzDZNiqQuzSk64ftFz",
+        "workflow_task_id:3ZfmmDPRkVrAkWdsmeFbDPf8yjhfBBqZGLDPQcZUoJ6H",
+        "workflow_task_id:BPfrmLcpVwf6fiBs1crbdXfZGzDNibmFWApxC9s76mTJ",
+        "transition_id:ALVJxtupmB9nAPch29Bkd1XouqU9LALWe9QM8FAbT2D6",
+        "transition_id:HajyHND5Hptj4VL88XYHXCLVjK8hTMMjv6DwpA3M4Qcq",
+        "transition_id:Bsq3Y5Y8JKD1iGjXFaabzvVtikPbnH85eRw8w5pvyF3M",
+        "transition_id:9GjwKZzEZaQSebusQA26CC7C7xcmbz8BvajGnct3mZwp",
+        "workflow_task_id:DPAFW6RHi8v6s3av54njtoLCkfW2yMXYXGHVZft9kD8E",
+        "transition_id:ADWoH5qQcUqRM3GX2cqJVoG4CBdSU9fdtVxo3a8ksbcg",
+        "transition_id:Fv8Tv5kt6BxQeSAmdH2JxiFPXX9bPnVK4ANdRC2yXnPE",
+        "workflow_task_id:A14eAEc4C1qCzHpLEhh1deQmbMgSzZnERveuPQWrH7YQ",
+        "workflow_task_id:BXXzNUVFZJZs99PpZMazRBspf2qWQxj1cm6oMzKYmqru",
+        "workflow_task_id:7NNVzWtxCuYS21Mxrb6NsQvyhCwXGS6dEz6Gf3VXa7FA",
+        "transition_id:E7EW68yMPW2FJ8hNKPuHgM5AwLu2hneTW44WFWoxTCCT",
+        "transition_id:D8TUj1NNEJqAnQ8irFsbiCK6uDwTw96oHQkU7wvQoJqq",
+        "transition_id:5rDx3auDR76zC5j9JauG3bpqrDVRfqXRFgpyTP1jLbei",
+        "action:qCZapmSYp7JNjpLXM3NvrfjUqDprKsMUttiyXPzMMwi",
+        "transition_id:Bc5jzXcmaJKC5TH4ArcYUo4uYxR2dnNZVMDHzVA1EmN",
+        "workflow_task_id:24oVVsGLMukPFMsm289fpdHSRKyWEVxvsaPfLKswZsUr"
+      ]
+    },
+    "trigger:CLJBuzCiy7amDCd9FhhqDUdbRHTBGrDtvPnAZLe1Lxip": {
+      "type": "trigger",
+      "content_hash": "8A2kMxxvJENFDeKsHVF2WGuQSNmo1zTodBNRqwZBuu5k",
+      "hash": "7JwK2JtXL9DnWhkPpm9SUuqweaCq7LWaCehQkgieLfv9",
+      "fields": {
+        "autoActivateManagedOrgs": false,
+        "criteria": {},
+        "enabled": true,
+        "formId": null,
+        "isActivatedForOwner": true,
+        "packOverrides": [],
+        "parameters": {
+          "cron": "0 7 * * *",
+          "secret_key": "",
+          "response_body": "{{ template(\"REPLACE_WITH_IMPORTED_TEMPLATE_ID\") | d or \"Reload in a few minutes\" }}",
+          "allowed_methods": [
+            "GET"
+          ],
+          "response_status": "200",
+          "include_raw_body": false,
+          "response_headers": "{\"Content-Type\": \"text/html\"}",
+          "wait_for_results": false
+        },
+        "triggerTypeId": "@@@trigger_type_ref1@@@",
+        "vars": [
+          {
+            "report_period": "D30"
+          },
+          {
+            "stale_days": "90"
+          },
+          {
+            "tenant_name": "Example Tenant"
+          }
+        ],
+        "workflowId": "@@@workflow_ref1@@@"
+      },
+      "nonfunctional_fields": {
+        "description": null,
+        "name": "Microsoft 365 Utilization Report Webhook"
+      },
+      "references": {
+        "workflow_ref1": {
+          "kind": "string",
+          "type": "workflow",
+          "src_key_hash": "6PUeraMBTi8spRACK5F7d1QQAWYeDiSPQQLdpLurK9qg",
+          "content_hash": "8p4RMYDURNT4biRbQ5s1xCXY6gTuA5au3BxUAhLujbJ",
+          "locations": [
+            "workflowId"
+          ]
+        },
+        "trigger_type_ref1": {
+          "kind": "string",
+          "type": "trigger_type",
+          "src_key_hash": "ADTkFDGY58o8ACCDoptsybAUcb2tAD1nBghXPMVRZ1Xe",
+          "content_hash": "HnoxQiJaD2AXzSixvrruvJbH2LA13kjSwUttGFc847xJ",
+          "locations": [
+            "triggerTypeId"
+          ]
+        }
+      },
+      "dependencies": [
+        "workflow:6PUeraMBTi8spRACK5F7d1QQAWYeDiSPQQLdpLurK9qg",
+        "trigger_type:ADTkFDGY58o8ACCDoptsybAUcb2tAD1nBghXPMVRZ1Xe"
+      ]
+    },
+    "trigger:dUYcjo5xgc6JQ8KpuSHD63k8SVKz5pdd8sLz5m5MByS": {
+      "type": "trigger",
+      "content_hash": "6RUDcMsd6k8RJz4tZFJaJsaK41MJbo2GnpVW39bn2FA9",
+      "hash": "EtHuRCsH5q5TYRGES8Q9BpRdpHCuu2RGbJ9hpDDsbAcC",
+      "fields": {
+        "autoActivateManagedOrgs": true,
+        "criteria": {
+          "condition": {}
+        },
+        "enabled": true,
+        "formId": null,
+        "isActivatedForOwner": false,
+        "packOverrides": [],
+        "parameters": {
+          "cron": "0 7 1 * *",
+          "timezone": "America/Los_Angeles",
+          "critical_timing": false
+        },
+        "triggerTypeId": "@@@trigger_type_ref1@@@",
+        "vars": [
+          {
+            "report_period": "D30"
+          },
+          {
+            "stale_days": "90"
+          },
+          {
+            "tenant_name": "Example Tenant"
+          }
+        ],
+        "workflowId": "@@@workflow_ref1@@@"
+      },
+      "nonfunctional_fields": {
+        "description": "Monthly Microsoft 365 user utilization report",
+        "name": "Cron Trigger"
+      },
+      "references": {
+        "trigger_type_ref1": {
+          "kind": "string",
+          "type": "trigger_type",
+          "src_key_hash": "CWJ1fXr4zFVQeyWVBqgzjmfRVhuphwZC81DMGgFz32p",
+          "content_hash": "BHPpyh4yVZ17wHeUJv63HWCEWEeD1DZo2JGw8ZX7LWWc",
+          "locations": [
+            "triggerTypeId"
+          ]
+        },
+        "workflow_ref1": {
+          "kind": "string",
+          "type": "workflow",
+          "src_key_hash": "6PUeraMBTi8spRACK5F7d1QQAWYeDiSPQQLdpLurK9qg",
+          "content_hash": "8p4RMYDURNT4biRbQ5s1xCXY6gTuA5au3BxUAhLujbJ",
+          "locations": [
+            "workflowId"
+          ]
+        }
+      },
+      "dependencies": [
+        "trigger_type:CWJ1fXr4zFVQeyWVBqgzjmfRVhuphwZC81DMGgFz32p",
+        "workflow:6PUeraMBTi8spRACK5F7d1QQAWYeDiSPQQLdpLurK9qg"
+      ]
+    }
+  },
+  "__typename": "ExportBundle"
+}

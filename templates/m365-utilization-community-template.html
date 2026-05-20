@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Microsoft 365 User Utilization Report</title>
+  <style>
+    :root {
+      --bg: #f6f7f9;
+      --panel: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --line: #d1d5db;
+      --line-soft: #e5e7eb;
+      --header: #eef2f7;
+      --good: #166534;
+      --good-bg: #dcfce7;
+      --warn: #92400e;
+      --warn-bg: #fef3c7;
+      --bad: #991b1b;
+      --bad-bg: #fee2e2;
+      --neutral-bg: #f3f4f6;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 24px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    .page {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    header,
+    section,
+    .metric {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+    }
+
+    header {
+      padding: 24px;
+      margin-bottom: 16px;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      margin-bottom: 8px;
+      font-size: 28px;
+      line-height: 1.15;
+    }
+
+    h2 {
+      margin-bottom: 8px;
+      font-size: 20px;
+    }
+
+    h3 {
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+
+    .meta,
+    .muted {
+      color: var(--muted);
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 12px;
+      font-size: 13px;
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .metric {
+      padding: 14px;
+    }
+
+    .metric .label {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+
+    .metric .value {
+      display: block;
+      margin-top: 6px;
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    section {
+      padding: 18px;
+      margin-bottom: 16px;
+    }
+
+    .section-note {
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+    }
+
+    table {
+      width: 100%;
+      min-width: 960px;
+      border-collapse: collapse;
+      background: var(--panel);
+    }
+
+    .compact table,
+    table.compact {
+      min-width: 720px;
+    }
+
+    th,
+    td {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--line-soft);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--header);
+      color: #374151;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .right {
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .nowrap {
+      white-space: nowrap;
+    }
+
+    .user-name {
+      font-weight: 700;
+    }
+
+    .subtle {
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 12px;
+      overflow-wrap: anywhere;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      padding: 3px 8px;
+      background: var(--neutral-bg);
+      color: #374151;
+      font-size: 12px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .chip.good {
+      background: var(--good-bg);
+      color: var(--good);
+    }
+
+    .chip.warn {
+      background: var(--warn-bg);
+      color: var(--warn);
+    }
+
+    .chip.bad {
+      background: var(--bad-bg);
+      color: var(--bad);
+    }
+
+    .stack {
+      display: grid;
+      gap: 6px;
+    }
+
+    details {
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--panel);
+      margin-bottom: 10px;
+    }
+
+    summary {
+      cursor: pointer;
+      padding: 12px;
+      font-weight: 700;
+    }
+
+    .details-body {
+      border-top: 1px solid var(--line-soft);
+      padding: 12px;
+    }
+
+    .empty {
+      padding: 14px;
+      border: 1px dashed var(--line);
+      border-radius: 6px;
+      color: var(--muted);
+      background: #fafafa;
+    }
+
+    @media (max-width: 900px) {
+      body { padding: 12px; }
+      .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media print {
+      body { background: #ffffff; padding: 0; }
+      header, section, .metric { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+{% set report = CTX.report_data | d('{}') | from_json_string %}
+{% set summary = report.summary | d({}) %}
+{% set pricing = report.pricing_summary | d({}) %}
+{% set workloads = report.workload_summary | d({}) %}
+{% set user_rows = report.user_rows | d([]) %}
+{% set license_rows = report.license_rows | d([]) %}
+{% set tenant_name = CTX.tenant_name | d(report.tenant_name | d('Tenant')) %}
+<div class="page">
+  <header>
+    <h1>{{ tenant_name }} Microsoft 365 User Utilization</h1>
+    <p class="muted">A review of assigned licenses, successful sign-in evidence, Microsoft 365 workload activity, and estimated license review opportunities.</p>
+    <div class="meta">
+      <span>Report period: {{ report.report_period | d(CTX.report_period | d('D30')) }}</span>
+      <span>Stale threshold: {{ report.stale_days | d(CTX.stale_days | d(90)) }} days</span>
+      {% if report.generated_at %}<span>Generated: {{ report.generated_at }}</span>{% endif %}
+    </div>
+  </header>
+
+  <div class="metrics">
+    <div class="metric"><span class="label">Total users</span><span class="value">{{ summary.total_users | d(0) }}</span></div>
+    <div class="metric"><span class="label">Licensed</span><span class="value">{{ summary.licensed_users | d(0) }}</span></div>
+    <div class="metric"><span class="label">Stale</span><span class="value">{{ summary.stale_users | d(0) }}</span></div>
+    <div class="metric"><span class="label">Est. stale review / mo</span><span class="value">${{ '%.2f'|format(pricing.stale_monthly_reclaim | d(0)) }}</span></div>
+    <div class="metric"><span class="label">Priced coverage</span><span class="value">{{ pricing.priced_assignment_count | d(0) }}/{{ pricing.total_assignment_count | d(0) }}</span></div>
+  </div>
+
+  <section>
+    <h2>Important Notes</h2>
+    <ul>
+      {% for note in report.notes | d([]) %}<li>{{ note }}</li>{% endfor %}
+      <li>Cost estimates use matched public Microsoft list prices only. Unmatched, bundled, ambiguous, or unpriced SKUs are excluded from savings estimates.</li>
+      <li>Low or missing usage evidence is a review signal, not proof that a license can be removed. Validate business role, mailbox type, shared use, and approval before making changes.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Executive Snapshot</h2>
+    <p class="section-note">Summary rows are intended to help prioritize review work. They should not be treated as automatic remediation instructions.</p>
+    <div class="table-wrap compact">
+      <table class="compact">
+        <thead>
+          <tr><th>Category</th><th class="right">Users</th><th>Evidence</th><th class="right">Estimated Monthly Review</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Licensed and active</td>
+            <td class="right">{{ summary.active_licensed_users | d(summary.active_users | d(0)) }}</td>
+            <td>Recent sign-in or Microsoft 365 workload evidence.</td>
+            <td class="right">$0.00</td>
+          </tr>
+          <tr>
+            <td>Licensed and stale</td>
+            <td class="right">{{ summary.stale_users | d(0) }}</td>
+            <td>No successful sign-in within the configured stale threshold.</td>
+            <td class="right">${{ '%.2f'|format(pricing.stale_monthly_reclaim | d(0)) }}</td>
+          </tr>
+          <tr>
+            <td>Licensed with no workload evidence</td>
+            <td class="right">{{ summary.no_workload_users | d(0) }}</td>
+            <td>Licensed user with no workload usage surfaced in the report window.</td>
+            <td class="right">${{ '%.2f'|format(pricing.no_workload_monthly_review | d(0)) }}</td>
+          </tr>
+          <tr>
+            <td>Licensed but low utilization</td>
+            <td class="right">{{ summary.low_utilization_users | d(0) }}</td>
+            <td>Limited direct workload evidence in the current window.</td>
+            <td class="right">${{ '%.2f'|format(pricing.low_monthly_review | d(0)) }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>User Detail</h2>
+    <p class="section-note">Current license assignment is shown in full. Workload columns show direct activity evidence from the selected report window.</p>
+    {% if user_rows | length > 0 %}
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>User</th>
+            <th>Current Licenses</th>
+            <th class="right">Est. Monthly Cost</th>
+            <th>Last Successful Sign-In</th>
+            <th>Sign-In</th>
+            <th>Email</th>
+            <th>Teams</th>
+            <th>OneDrive</th>
+            <th>SharePoint</th>
+            <th>Apps</th>
+          </tr>
+        </thead>
+        <tbody>
+        {% for row in user_rows | sort(attribute='estimated_monthly_cost', reverse=true) %}
+          <tr>
+            <td>
+              <div class="user-name">{{ row.display_name }}</div>
+              <div class="subtle">{{ row.user_principal_name }}</div>
+              {% if row.department %}<div class="subtle">{{ row.department }}</div>{% endif %}
+            </td>
+            <td>
+              {% if row.license_names | d([]) | length > 0 %}
+              <div class="chips">
+                {% for lic in row.license_names | sort %}
+                <span class="chip">{{ lic }}</span>
+                {% endfor %}
+              </div>
+              {% else %}
+              <span class="chip">Unlicensed</span>
+              {% endif %}
+            </td>
+            <td class="right">
+              <strong>${{ '%.2f'|format(row.estimated_monthly_cost | d(0)) }}</strong>
+              {% if row.unpriced_licenses | d([]) | length > 0 %}<div class="subtle">{{ row.unpriced_licenses | length }} unpriced SKU(s)</div>{% endif %}
+            </td>
+            <td class="nowrap">{{ row.last_successful_signin | d('None recorded') }}</td>
+            <td>{% if row.recent_signin %}<span class="chip good">Recent</span>{% elif row.stale %}<span class="chip bad">Stale</span>{% else %}<span class="chip">No</span>{% endif %}</td>
+            <td>{% if row.email_active %}<span class="chip good">Yes</span>{% elif row.licensed %}<span class="chip">No</span>{% else %}<span class="chip">N/A</span>{% endif %}</td>
+            <td>{% if row.teams_active %}<span class="chip good">Yes</span>{% elif row.licensed %}<span class="chip">No</span>{% else %}<span class="chip">N/A</span>{% endif %}</td>
+            <td>{% if row.onedrive_active %}<span class="chip good">Yes</span>{% elif row.licensed %}<span class="chip">No</span>{% else %}<span class="chip">N/A</span>{% endif %}</td>
+            <td>{% if row.sharepoint_active %}<span class="chip good">Yes</span>{% elif row.licensed %}<span class="chip">No</span>{% else %}<span class="chip">N/A</span>{% endif %}</td>
+            <td>{% if row.m365app_active %}<span class="chip good">Yes</span>{% elif row.licensed %}<span class="chip">No</span>{% else %}<span class="chip">N/A</span>{% endif %}</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% else %}
+    <div class="empty">No user baseline has been normalized yet.</div>
+    {% endif %}
+  </section>
+
+  <section>
+    <h2>Stale Licensed Users</h2>
+    <p class="section-note">Enabled, licensed users with no successful sign-in inside the configured threshold.</p>
+    {% if report.stale_rows | d([]) | length > 0 %}
+    <div class="table-wrap compact">
+      <table class="compact">
+        <thead>
+          <tr><th>User</th><th>Current Licenses</th><th class="right">Est. Monthly Cost</th><th>Last Successful Sign-In</th><th>Reason</th></tr>
+        </thead>
+        <tbody>
+        {% for row in user_rows if row.stale %}
+          <tr>
+            <td><div class="user-name">{{ row.display_name }}</div><div class="subtle">{{ row.user_principal_name }}</div></td>
+            <td><div class="chips">{% for lic in row.license_names | d([]) | sort %}<span class="chip">{{ lic }}</span>{% endfor %}</div></td>
+            <td class="right">${{ '%.2f'|format(row.estimated_monthly_cost | d(0)) }}</td>
+            <td class="nowrap">{{ row.last_successful_signin | d('None recorded') }}</td>
+            <td>No successful sign-in within {{ report.stale_days | d(90) }} days.</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% else %}
+    <div class="empty">No stale users were identified in the current normalized dataset.</div>
+    {% endif %}
+  </section>
+
+  <section>
+    <h2>License Efficiency</h2>
+    {% if license_rows | length > 0 %}
+    {% for row in license_rows | sort(attribute='stale_monthly_cost', reverse=true) %}
+    <details {% if loop.first and row.stale_users | d([]) | length > 0 %}open{% endif %}>
+      <summary>{{ row.license_name }} - {{ row.assigned_users | d(0) }} assigned, {{ row.stale_users | d([]) | length }} stale, ${{ '%.2f'|format(row.stale_monthly_cost | d(0)) }}/mo review target</summary>
+      <div class="details-body">
+        <p class="muted">Monthly price: {% if row.monthly_price is not none %}${{ '%.2f'|format(row.monthly_price) }}{% else %}Unpriced{% endif %}. Source: {{ row.source | d('Not priced') }}.</p>
+        {% if row.stale_users | d([]) | length > 0 %}
+        <div class="table-wrap compact">
+          <table class="compact">
+            <thead><tr><th>Stale User</th><th>UPN</th><th>Last Successful Sign-In</th><th class="right">Estimated Monthly Cost</th></tr></thead>
+            <tbody>
+            {% for stale_user in row.stale_users %}
+              <tr>
+                <td>{{ stale_user.display_name }}</td>
+                <td>{{ stale_user.user_principal_name }}</td>
+                <td>{{ stale_user.last_successful_signin | d('None recorded') }}</td>
+                <td class="right">{% if stale_user.monthly_price is not none %}${{ '%.2f'|format(stale_user.monthly_price) }}{% else %}Unpriced{% endif %}</td>
+              </tr>
+            {% endfor %}
+            </tbody>
+          </table>
+        </div>
+        {% else %}
+        <div class="empty">No stale users for this license.</div>
+        {% endif %}
+      </div>
+    </details>
+    {% endfor %}
+    {% else %}
+    <div class="empty">No license assignments were normalized from the tenant baseline.</div>
+    {% endif %}
+  </section>
+
+  <section>
+    <h2>Workload Adoption</h2>
+    <div class="table-wrap compact">
+      <table class="compact">
+        <thead><tr><th>Workload</th><th class="right">Users With Activity</th><th>Evidence Source</th></tr></thead>
+        <tbody>
+          <tr><td>Office 365 active</td><td class="right">{{ workloads.office | d(0) }}</td><td>Microsoft 365 active user detail.</td></tr>
+          <tr><td>Email</td><td class="right">{{ workloads.email | d(0) }}</td><td>Exchange or Outlook activity detected.</td></tr>
+          <tr><td>Teams</td><td class="right">{{ workloads.teams | d(0) }}</td><td>Teams activity detected.</td></tr>
+          <tr><td>OneDrive</td><td class="right">{{ workloads.onedrive | d(0) }}</td><td>OneDrive activity detected.</td></tr>
+          <tr><td>SharePoint</td><td class="right">{{ workloads.sharepoint | d(0) }}</td><td>SharePoint activity detected.</td></tr>
+          <tr><td>M365 Apps</td><td class="right">{{ workloads.m365app | d(0) }}</td><td>M365 Apps activity detected.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Recommendations</h2>
+    <p class="section-note">This queue is driven by direct evidence: stale sign-in, no workload evidence, low utilization, or unlicensed accounts that still deserve review.</p>
+    {% if report.recommendation_rows | d([]) | length > 0 %}
+    <div class="table-wrap compact">
+      <table class="compact">
+        <thead><tr><th>User</th><th>Current Licenses</th><th class="right">Est. Monthly Cost</th><th>Evidence</th><th>Suggested Action</th></tr></thead>
+        <tbody>
+        {% for row in user_rows if row.classification != 'Licensed and active' %}
+          <tr>
+            <td><div class="user-name">{{ row.display_name }}</div><div class="subtle">{{ row.user_principal_name }}</div></td>
+            <td><div class="chips">{% for lic in row.license_names | d([]) | sort %}<span class="chip">{{ lic }}</span>{% endfor %}</div></td>
+            <td class="right">${{ '%.2f'|format(row.estimated_monthly_cost | d(0)) }}</td>
+            <td>
+              <div class="stack">
+                {% if row.stale %}<span class="chip bad">No successful sign-in inside {{ report.stale_days | d(90) }} days</span>{% endif %}
+                {% if row.licensed and row.workload_count == 0 %}<span class="chip warn">No workload evidence in {{ report.report_period | d('D30') }}</span>{% endif %}
+                {% if row.classification == 'Licensed but low utilization' %}<span class="chip warn">Only {{ row.workload_count }} workload(s) show activity</span>{% endif %}
+                {% if not row.licensed %}<span class="chip">No current licenses assigned</span>{% endif %}
+                {% if row.unpriced_licenses | d([]) | length > 0 %}<span class="chip">{{ row.unpriced_licenses | length }} unpriced SKU(s)</span>{% endif %}
+              </div>
+            </td>
+            <td>{{ row.recommendation }}</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% else %}
+    <div class="empty">No recommendation rows were generated yet.</div>
+    {% endif %}
+  </section>
+</div>
+</body>
+</html>

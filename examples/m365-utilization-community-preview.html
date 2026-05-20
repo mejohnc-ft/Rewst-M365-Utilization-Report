@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Microsoft 365 User Utilization Report</title>
+  <style>
+    :root {
+      --bg: #f6f7f9;
+      --panel: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --line: #d1d5db;
+      --line-soft: #e5e7eb;
+      --header: #eef2f7;
+      --good: #166534;
+      --good-bg: #dcfce7;
+      --warn: #92400e;
+      --warn-bg: #fef3c7;
+      --bad: #991b1b;
+      --bad-bg: #fee2e2;
+      --neutral-bg: #f3f4f6;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 24px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    .page {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    header,
+    section,
+    .metric {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+    }
+
+    header {
+      padding: 24px;
+      margin-bottom: 16px;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      margin-bottom: 8px;
+      font-size: 28px;
+      line-height: 1.15;
+    }
+
+    h2 {
+      margin-bottom: 8px;
+      font-size: 20px;
+    }
+
+    h3 {
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+
+    .meta,
+    .muted {
+      color: var(--muted);
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 12px;
+      font-size: 13px;
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .metric {
+      padding: 14px;
+    }
+
+    .metric .label {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+
+    .metric .value {
+      display: block;
+      margin-top: 6px;
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    section {
+      padding: 18px;
+      margin-bottom: 16px;
+    }
+
+    .section-note {
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+    }
+
+    table {
+      width: 100%;
+      min-width: 960px;
+      border-collapse: collapse;
+      background: var(--panel);
+    }
+
+    .compact table,
+    table.compact {
+      min-width: 720px;
+    }
+
+    th,
+    td {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--line-soft);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--header);
+      color: #374151;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .right {
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .nowrap {
+      white-space: nowrap;
+    }
+
+    .user-name {
+      font-weight: 700;
+    }
+
+    .subtle {
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 12px;
+      overflow-wrap: anywhere;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      padding: 3px 8px;
+      background: var(--neutral-bg);
+      color: #374151;
+      font-size: 12px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .chip.good {
+      background: var(--good-bg);
+      color: var(--good);
+    }
+
+    .chip.warn {
+      background: var(--warn-bg);
+      color: var(--warn);
+    }
+
+    .chip.bad {
+      background: var(--bad-bg);
+      color: var(--bad);
+    }
+
+    .stack {
+      display: grid;
+      gap: 6px;
+    }
+
+    details {
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--panel);
+      margin-bottom: 10px;
+    }
+
+    summary {
+      cursor: pointer;
+      padding: 12px;
+      font-weight: 700;
+    }
+
+    .details-body {
+      border-top: 1px solid var(--line-soft);
+      padding: 12px;
+    }
+
+    .empty {
+      padding: 14px;
+      border: 1px dashed var(--line);
+      border-radius: 6px;
+      color: var(--muted);
+      background: #fafafa;
+    }
+
+    @media (max-width: 900px) {
+      body { padding: 12px; }
+      .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media print {
+      body { background: #ffffff; padding: 0; }
+      header, section, .metric { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+
+
+
+
+
+
+
+<div class="page">
+  <header>
+    <h1>Example Tenant Microsoft 365 User Utilization</h1>
+    <p class="muted">A review of assigned licenses, successful sign-in evidence, Microsoft 365 workload activity, and estimated license review opportunities.</p>
+    <div class="meta">
+      <span>Report period: D30</span>
+      <span>Stale threshold: 90 days</span>
+      <span>Generated: 2026-05-20 15:10 UTC</span>
+    </div>
+  </header>
+
+  <div class="metrics">
+    <div class="metric"><span class="label">Total users</span><span class="value">128</span></div>
+    <div class="metric"><span class="label">Licensed</span><span class="value">94</span></div>
+    <div class="metric"><span class="label">Stale</span><span class="value">8</span></div>
+    <div class="metric"><span class="label">Est. stale review / mo</span><span class="value">$318.40</span></div>
+    <div class="metric"><span class="label">Priced coverage</span><span class="value">86/117</span></div>
+  </div>
+
+  <section>
+    <h2>Important Notes</h2>
+    <ul>
+      <li>This is sample preview data only.</li><li>Microsoft usage report data can lag and should be treated as operational evidence.</li>
+      <li>Cost estimates use matched public Microsoft list prices only. Unmatched, bundled, ambiguous, or unpriced SKUs are excluded from savings estimates.</li>
+      <li>Low or missing usage evidence is a review signal, not proof that a license can be removed. Validate business role, mailbox type, shared use, and approval before making changes.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Executive Snapshot</h2>
+    <p class="section-note">Summary rows are intended to help prioritize review work. They should not be treated as automatic remediation instructions.</p>
+    <div class="table-wrap compact">
+      <table class="compact">
+        <thead>
+          <tr><th>Category</th><th class="right">Users</th><th>Evidence</th><th class="right">Estimated Monthly Review</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Licensed and active</td>
+            <td class="right">72</td>
+            <td>Recent sign-in or Microsoft 365 workload evidence.</td>
+            <td class="right">$0.00</td>
+          </tr>
+          <tr>
+            <td>Licensed and stale</td>
+            <td class="right">8</td>
+            <td>No successful sign-in within the configured stale threshold.</td>
+            <td class="right">$318.40</td>
+          </tr>
+          <tr>
+            <td>Licensed with no workload evidence</td>
+            <td class="right">6</td>
+            <td>Licensed user with no workload usage surfaced in the report window.</td>
+            <td class="right">$211.90</td>
+          </tr>
+          <tr>
+            <td>Licensed but low utilization</td>
+            <td class="right">11</td>
+            <td>Limited direct workload evidence in the current window.</td>
+            <td class="right">$422.65</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>User Detail</h2>
+    <p class="section-note">Current license assignment is shown in full. Workload columns show direct activity evidence from the selected report window.</p>
+    
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>User</th>
+            <th>Current Licenses</th>
+            <th class="right">Est. Monthly Cost</th>
+            <th>Last Successful Sign-In</th>
+            <th>Sign-In</th>
+            <th>Email</th>
+            <th>Teams</th>
+            <th>OneDrive</th>
+            <th>SharePoint</th>
+            <th>Apps</th>
+          </tr>
+        </thead>
+        <tbody>
+        
+          <tr>
+            <td>
+              <div class="user-name">Sam Patel</div>
+              <div class="subtle">sam.patel@example.com</div>
+              <div class="subtle">Sales</div>
+            </td>
+            <td>
+              
+              <div class="chips">
+                
+                <span class="chip">Microsoft_365_Copilot</span>
+                
+                <span class="chip">Microsoft_365_E3_(no_Teams)</span>
+                
+              </div>
+              
+            </td>
+            <td class="right">
+              <strong>$57.45</strong>
+              
+            </td>
+            <td class="nowrap">2026-05-17T12:05:33Z</td>
+            <td><span class="chip good">Recent</span></td>
+            <td><span class="chip good">Yes</span></td>
+            <td><span class="chip">No</span></td>
+            <td><span class="chip">No</span></td>
+            <td><span class="chip">No</span></td>
+            <td><span class="chip">No</span></td>
+          </tr>
+        
+          <tr>
+            <td>
+              <div class="user-name">Jordan Lee</div>
+              <div class="subtle">jordan.lee@example.com</div>
+              <div class="subtle">Operations</div>
+            </td>
+            <td>
+              
+              <div class="chips">
+                
+                <span class="chip">Microsoft_365_E3_(no_Teams)</span>
+                
+                <span class="chip">POWER_BI_STANDARD</span>
+                
+              </div>
+              
+            </td>
+            <td class="right">
+              <strong>$41.45</strong>
+              
+            </td>
+            <td class="nowrap">2026-05-18T16:42:10Z</td>
+            <td><span class="chip good">Recent</span></td>
+            <td><span class="chip good">Yes</span></td>
+            <td><span class="chip good">Yes</span></td>
+            <td><span class="chip good">Yes</span></td>
+            <td><span class="chip good">Yes</span></td>
+            <td><span class="chip good">Yes</span></td>
+          </tr>
+        
+          <tr>
+            <td>
+              <div class="user-name">Avery Morgan</div>
+              <div class="subtle">avery.morgan@example.com</div>
+              <div class="subtle">Finance</div>
+            </td>
+            <td>
+              
+              <div class="chips">
+                
+                <span class="chip">Microsoft_365_E3_(no_Teams)</span>
+                
+              </div>
+              
+            </td>
+            <td class="right">
+              <strong>$27.45</strong>
+              
+            </td>
+            <td class="nowrap">2026-01-09T09:14:02Z</td>
+            <td><span class="chip bad">Stale</span></td>
+            <td><span class="chip">No</span></td>
+            <td><span class="chip">No</span></td>
+            <td><span class="chip">No</span></td>
+            <td><span class="chip">No</span></td>
+            <td><span class="chip">No</span></td>
+          </tr>
+        
+          <tr>
+            <td>
+              <div class="user-name">Taylor Reed</div>
+              <div class="subtle">taylor.reed@example.com</div>
+              <div class="subtle">Shared Services</div>
+            </td>
+            <td>
+              
+              <span class="chip">Unlicensed</span>
+              
+            </td>
+            <td class="right">
+              <strong>$0.00</strong>
+              
+            </td>
+            <td class="nowrap">2026-05-12T18:33:10Z</td>
+            <td><span class="chip good">Recent</span></td>
+            <td><span class="chip">N/A</span></td>
+            <td><span class="chip">N/A</span></td>
+            <td><span class="chip">N/A</span></td>
+            <td><span class="chip">N/A</span></td>
+            <td><span class="chip">N/A</span></td>
+          </tr>
+        
+        </tbody>
+      </table>
+    </div>
+    
+  </section>
+
+  <section>
+    <h2>Stale Licensed Users</h2>
+    <p class="section-note">Enabled, licensed users with no successful sign-in inside the configured threshold.</p>
+    
+    <div class="table-wrap compact">
+      <table class="compact">
+        <thead>
+          <tr><th>User</th><th>Current Licenses</th><th class="right">Est. Monthly Cost</th><th>Last Successful Sign-In</th><th>Reason</th></tr>
+        </thead>
+        <tbody>
+        
+          <tr>
+            <td><div class="user-name">Avery Morgan</div><div class="subtle">avery.morgan@example.com</div></td>
+            <td><div class="chips"><span class="chip">Microsoft_365_E3_(no_Teams)</span></div></td>
+            <td class="right">$27.45</td>
+            <td class="nowrap">2026-01-09T09:14:02Z</td>
+            <td>No successful sign-in within 90 days.</td>
+          </tr>
+        
+        </tbody>
+      </table>
+    </div>
+    
+  </section>
+
+  <section>
+    <h2>License Efficiency</h2>
+    
+    
+    <details open>
+      <summary>Microsoft_365_E3_(no_Teams) - 61 assigned, 1 stale, $27.45/mo review target</summary>
+      <div class="details-body">
+        <p class="muted">Monthly price: $27.45. Source: Microsoft 365 E3 (no Teams).</p>
+        
+        <div class="table-wrap compact">
+          <table class="compact">
+            <thead><tr><th>Stale User</th><th>UPN</th><th>Last Successful Sign-In</th><th class="right">Estimated Monthly Cost</th></tr></thead>
+            <tbody>
+            
+              <tr>
+                <td>Avery Morgan</td>
+                <td>avery.morgan@example.com</td>
+                <td>2026-01-09T09:14:02Z</td>
+                <td class="right">$27.45</td>
+              </tr>
+            
+            </tbody>
+          </table>
+        </div>
+        
+      </div>
+    </details>
+    
+    <details >
+      <summary>Microsoft_365_Copilot - 18 assigned, 0 stale, $0.00/mo review target</summary>
+      <div class="details-body">
+        <p class="muted">Monthly price: $30.00. Source: Microsoft 365 Copilot.</p>
+        
+        <div class="empty">No stale users for this license.</div>
+        
+      </div>
+    </details>
+    
+    <details >
+      <summary>POWER_BI_STANDARD - 24 assigned, 0 stale, $0.00/mo review target</summary>
+      <div class="details-body">
+        <p class="muted">Monthly price: $14.00. Source: Power BI Pro.</p>
+        
+        <div class="empty">No stale users for this license.</div>
+        
+      </div>
+    </details>
+    
+    
+  </section>
+
+  <section>
+    <h2>Workload Adoption</h2>
+    <div class="table-wrap compact">
+      <table class="compact">
+        <thead><tr><th>Workload</th><th class="right">Users With Activity</th><th>Evidence Source</th></tr></thead>
+        <tbody>
+          <tr><td>Office 365 active</td><td class="right">76</td><td>Microsoft 365 active user detail.</td></tr>
+          <tr><td>Email</td><td class="right">83</td><td>Exchange or Outlook activity detected.</td></tr>
+          <tr><td>Teams</td><td class="right">64</td><td>Teams activity detected.</td></tr>
+          <tr><td>OneDrive</td><td class="right">52</td><td>OneDrive activity detected.</td></tr>
+          <tr><td>SharePoint</td><td class="right">49</td><td>SharePoint activity detected.</td></tr>
+          <tr><td>M365 Apps</td><td class="right">68</td><td>M365 Apps activity detected.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Recommendations</h2>
+    <p class="section-note">This queue is driven by direct evidence: stale sign-in, no workload evidence, low utilization, or unlicensed accounts that still deserve review.</p>
+    
+    <div class="table-wrap compact">
+      <table class="compact">
+        <thead><tr><th>User</th><th>Current Licenses</th><th class="right">Est. Monthly Cost</th><th>Evidence</th><th>Suggested Action</th></tr></thead>
+        <tbody>
+        
+          <tr>
+            <td><div class="user-name">Avery Morgan</div><div class="subtle">avery.morgan@example.com</div></td>
+            <td><div class="chips"><span class="chip">Microsoft_365_E3_(no_Teams)</span></div></td>
+            <td class="right">$27.45</td>
+            <td>
+              <div class="stack">
+                <span class="chip bad">No successful sign-in inside 90 days</span>
+                <span class="chip warn">No workload evidence in D30</span>
+                
+                
+                
+              </div>
+            </td>
+            <td>Investigate disablement or reclaim assigned licenses.</td>
+          </tr>
+        
+          <tr>
+            <td><div class="user-name">Sam Patel</div><div class="subtle">sam.patel@example.com</div></td>
+            <td><div class="chips"><span class="chip">Microsoft_365_Copilot</span><span class="chip">Microsoft_365_E3_(no_Teams)</span></div></td>
+            <td class="right">$57.45</td>
+            <td>
+              <div class="stack">
+                
+                
+                <span class="chip warn">Only 1 workload(s) show activity</span>
+                
+                
+              </div>
+            </td>
+            <td>Check workload fit and consider license optimization.</td>
+          </tr>
+        
+          <tr>
+            <td><div class="user-name">Taylor Reed</div><div class="subtle">taylor.reed@example.com</div></td>
+            <td><div class="chips"></div></td>
+            <td class="right">$0.00</td>
+            <td>
+              <div class="stack">
+                
+                
+                
+                <span class="chip">No current licenses assigned</span>
+                
+              </div>
+            </td>
+            <td>Confirm whether the user should remain in the tenant baseline.</td>
+          </tr>
+        
+        </tbody>
+      </table>
+    </div>
+    
+  </section>
+</div>
+</body>
+</html>
