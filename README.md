@@ -1,15 +1,15 @@
 # Rewst Microsoft 365 User Utilization Report
 
-A community-safe Rewst workflow and hosted HTML report for reviewing Microsoft 365 license utilization.
+A Rewst workflow and hosted HTML report for reviewing Microsoft 365 license utilization.
 
-The report collects Microsoft Graph usage evidence, license assignment context, successful sign-in recency, and estimated license review opportunities. It intentionally uses a plain, unbranded HTML template so MSPs can import it, validate it, and apply their own styling if they want.
+The report collects Microsoft Graph usage evidence, license assignment context, successful sign-in recency, and estimated license review opportunities.
 
 ![Microsoft 365 utilization report preview](examples/m365-utilization-community-preview.png)
 
 ## What Is Included
 
-- `rewst/workflow-m365-utilization-community.bundle.json` - Rewst import bundle.
-- `templates/m365-utilization-community-template.html` - plain HTML/Jinja report template embedded in the bundle.
+- `rewst/workflow-m365-utilization-community.bundle.json` - signed Rewst import bundle.
+- `templates/m365-utilization-community-template.html` - plain HTML/Jinja report template source.
 - `examples/m365-utilization-community-preview.html` - rendered example using sample data.
 - `examples/m365-utilization-community-preview.png` - screenshot of the example output.
 
@@ -39,25 +39,22 @@ Cost estimates only include SKUs explicitly mapped in the workflow's price map. 
 
 ## Import Instructions
 
-1. In Rewst, import `rewst/workflow-m365-utilization-community.bundle.json`.
-2. Confirm the workflow imports with these objects:
-   - `Microsoft 365 User Utilization Report - Community`
-   - `Microsoft 365 Utilization Report Webhook`
+1. Download `rewst/workflow-m365-utilization-community.bundle.json`.
+2. In Rewst, import the downloaded bundle.
+3. Confirm the workflow imports with these objects:
+   - `Microsoft: User Utilization Report`
+   - `User Utilization Report Webhook`
    - monthly cron trigger
    - hosted report template
-3. Find the template ID created by the import.
-4. Replace `REPLACE_WITH_IMPORTED_TEMPLATE_ID` in:
-   - the `rewst_update_template_direct` task input
-   - the webhook trigger `response_body`
-5. Open the email task and replace the placeholder message with the hosted report URL from your imported webhook trigger.
-6. Set workflow variables for your tenant:
+4. Set workflow variables for your tenant:
    - `tenant_name`
    - `report_period`: `D7`, `D30`, `D90`, or `D180`
    - `stale_days`: default `90`
    - `email_addresses`: comma-separated string or array
    - `exclusion_patterns`: optional UPN substrings for service/shared accounts
-7. Run the workflow manually for one test tenant.
-8. Review the hosted report output and confirm the data semantics before enabling the cron trigger.
+5. Open the email task and update the report link or message text if needed.
+6. Run the workflow manually for one test tenant.
+7. Review the hosted report output and confirm the data semantics before enabling the cron trigger.
 
 ## Microsoft Graph Calls
 
@@ -90,24 +87,15 @@ Mapped examples include:
 
 ## Template Notes
 
-The HTML template is deliberately plain:
-
-- no hosted images
-- no external fonts
-- no private branding
-- no front-end app shell
-- no feedback widgets
-- no decorative hero treatment
-
-It renders as simple sections, metric boxes, tables, and native HTML `<details>` blocks for license detail.
+The repository includes a plain HTML/Jinja template source and preview files for review. The importable bundle itself should stay exactly as exported from Rewst so its signing metadata remains valid.
 
 ## Known Limitations
 
 - The user query currently requests the first 500 users. Add paging if your tenant can exceed that.
 - CSV parsing in the workflow is intentionally simple and assumes Microsoft report CSV columns remain stable.
 - Pricing is a review estimate, not billing truth.
-- The import bundle was modified for public sharing, so the original Rewst export signing block was removed.
+- The shared import bundle must remain an unmodified Rewst export so its hashes and signing metadata stay valid.
 
 ## Sanitization
 
-This repository contains a community-safe extraction. It does not include private customer data, private hosted assets, MSP branding, internal URLs, credentials, or organization-specific defaults.
+This repository contains a Rewst-generated import bundle plus supporting source/template material. Do not sanitize a Rewst bundle by editing the JSON after export; make changes in Rewst and export a new bundle.
